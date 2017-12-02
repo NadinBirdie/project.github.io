@@ -1,6 +1,8 @@
 
 
-
+div {
+    display: block;
+}
 .nav-item .nav-link:hover {
     font-size: 17px;
     color: rgb(0, 74, 170);
@@ -20,4 +22,34 @@
 }
 #cont{
     margin-top: 100px;
+}
+
+.panel-heading{
+    position: absolute;
+    border-bottom-right-radius: 5px;
+    color: white;
+    padding: 3px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+}
+.panel-footer{    
+    background: re
+
+}
+
+.price{
+    margin-top: 2px;
+    font-size: 1,25em;
+    line-height: 1em;
+    color: #00b1c6;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+.pull-left{
+    margin-top: 5px;
+    width:150px;
+    float: left;
+}
+.pull-right{
+    float:right;
 }
