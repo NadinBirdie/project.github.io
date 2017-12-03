@@ -3,6 +3,7 @@
 div {
     display: block;
 }
+
 .nav-item .nav-link:hover {
     font-size: 17px;
     color: rgb(0, 74, 170);
@@ -52,4 +53,7 @@ div {
 }
 .pull-right{
     float:right;
+}
+.jumbotron{
+    margin-top: 56px;
 }
