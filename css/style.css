@@ -57,3 +57,11 @@ div {
 .jumbotron{
     margin-top: 56px;
 }
+.textlogo {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    color: rgb(39, 37, 37);
+    face:"Georgia";
+    font-size: 30px;
+}
