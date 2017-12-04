@@ -59,18 +59,141 @@
             <h1 style='font-family: Montserrat, sans-serif'>БРОНЮЙ БЕЗ ДЗВІНКІВ</h1>  
             <br>    
             <p>Сервіс онлайн-бронювання працює цілодобово, без вихідних. Інформацію про вільне житло і ціни на проживання вказують власники закладів відпочинку, тому ви завжди бачите тільки актуальні дані.</p>
+            
         </div>
         <div class="col-md-6 text-center"><img src='img/bg-last-text.svg' style='width:100%;height:250px;'></div>
       </div>
       
     </div>
-    
+    <div class="container">
+      <!-- slider 
+      ...........
+      ...................
+      .........
+      -->
+  <div class="container-fluid ">      
+      <button id="flip" type="button" class="btn  btn-danger " >Забронювати житло зараз</button>    
   </div>
 
+<div id="panel">
+
+      <div class="container">
+      <img src='img/logo1.png' height="75px" >
+      </div>
+<br>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+
+             <form class="form-horizontal" action="/action_page.php">
+      
+             <div class="form-group col-md-12">
+               <div class="col-xs-12 col-sm-12">
+                 <input type="email" class="form-control" id="email" placeholder="Ваш email" name="email">
+               </div>
+            </div>
+
+             <div class="form-group col-md-12">
+               <div class="col-sm-12">
+                 <input type="email" class="form-control" id="email" placeholder="Ім'я" name="email">
+               </div>
+             </div>
+         <div class="form-group col-md-12">
+            <div class="col-sm-12">
+             <input type="email" class="form-control" id="email" placeholder="Прізвище" name="email">
+           </div>
+         </div>
+        <div class="form-group col-md-12">
+            <div class="col-sm-12">          
+            <input type="telephone" class="form-control" id="pwd" placeholder="Введіть номер моб." name="pwd">
+          </div>
+        </div>
+        <div class="form-group col-md-12">
+            
+            <div class="col-sm-12">          
+              <input type="text" class="form-control" id="pwd" placeholder="Назва закладу" name="pwd">
+            </div>
+          </div>
+          <div class="form-group col-md-12">
+              
+              <div class="col-sm-12">          
+                <input type="telephone" class="form-control" id="pwd" placeholder="Додаткова інформація" name="pwd">
+              </div>
+            </div>
+        <!-- CALENDAR 
+        .......
+      .....
+    -->
+        <div class="form-group col-md-12">
+            <form action="/action_page.php" >
+              Дата приїзду:
+              <input type="date" name="comein">                      
+            </form>    
+        </div>
+        <div class="form-group col-md-12" >
+            <form action="/action_page.php" >
+              Дата від'їзду:
+              <input type="date" name="comein">                      
+            </form>    
+        </div>
+        <!-- END CALENDAR
+        ....
+      ......
+     -->
+
+        <div class="form-group col-md-12">        
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox" style='float:left'>
+                <label><input type="checkbox" name="remember">Підписатись на розсилку</label>
+              </div>
+            </div>
+          </div>
+        
+        <br>
+
+        <!-- BUTTON -->
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-success" style='float:right; margin-right:13px;'>ЗАБРОНЮВАТИ</button>
+        </div>
+       
+      </form>
+    </div>
+    <!-- COMMENTS -->
+   
+    <div class="col-md-6 ">
+        <br>
+      <img src='img/obama.jpg'><br>
+      <br>
+      
+      <p>Куди поїхати? Де краще винайняти житло? 
+        Сподіваємось ти швидко знайшов відповіді на всі ці питання.
+         Де б ти не вирішив зупинитись, ми підкажемо, як найкраще провести 
+         час та зробити відпустку у Карпатах насиченою!  </p>
+         <span style='font-weight:700'>За детальнішою інформацією телефонуйте: +43 922 54 97 042 (Барак) </span> 
+
+        
+    </div>
+    <!-- END COMMENTS -->
+  </div>
+  
+  
+  </div>
+</div>
+</div>         
+
+<!-- end slider
+..............
+..........
+.... -->
+
+    </div>
+    
+  </div>
+  
  <!-- ПЕРЕГЛЯНУТИ ЖИТЛО zabroniyvatu -->
  <div id='cont' class="container">    
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-4 ">
             <div class="panel panel-primary">
               <div class="panel-heading"><h5>Яблуниця</h5></div>
               <div class="panel-body">   
@@ -90,6 +213,7 @@
               </div>
             </div>
           </div>
+          <br>
           <div class="col-sm-4"> 
             <div class="panel panel-primary">
               <div class="panel-heading"><h5>Кривопілля</h5></div>
@@ -205,14 +329,22 @@
           </div>
         </div>
       </div>
+      <br><br>
       
-      <br>
-      <br>
       
       <footer class="container-fluid text-center">
         <p>Team number 2</p>                   
         </form>
       </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script> 
+      $(document).ready(function(){
+          $("#flip").click(function(){
+              $("#panel").slideToggle("slow");
+          });
+      });
+      </script>
 
 
 
