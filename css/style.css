@@ -24,6 +24,12 @@ div {
 #cont{
     margin-top: 100px;
 }
+.panel{
+    border: 3px solid rgb(204, 224, 243);    
+    border-radius: 6px;
+    padding: 1px;
+    background-color: #E9ECEF;
+}
 
 .panel-heading{
     position: relative;
@@ -36,17 +42,19 @@ div {
     background: #00b1c6;
 }
 .panel-footer{    
-    background: re
+    background: #E9ECEF;
+    height: 2.3em;
 
 }
 
 .price{
-    margin-top: 2px;
+    margin-top: 5px;
+    margin-left: 2px;
     font-size: 1,25em;
     line-height: 1em;
     color: #00b1c6;
     font-family: "Open Sans", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
 }
 .pull-left{
     margin-top: 5px;
@@ -55,18 +63,20 @@ div {
 }
 .pull-right{
     float:right;
+    margin-top: 3px;
+    margin-right: 1.5px;
 }
 .jumbotron{
     margin-top: 56px;
 }
-.textlogo {
+/*.textlogo {        
     position: absolute;
     top: 15%;
     left: 25%;
     color: rgb(39, 37, 37);
     face:"Georgia";
     font-size: 30px;
-}
+}*/
 /* IMAGE OVERLAY HOVER */
 .cont-hover {
     position: relative;
@@ -109,3 +119,9 @@ div {
   }
 
   /*END  IMAGE OVERLAY HOVER */
+  
+
+  footer{
+      height: 50px;
+      background-color: #E9ECEF;
+  }
