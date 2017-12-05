@@ -65,52 +65,130 @@
       </div>
       
     </div>
-
-    <!-- SLIDER -->
     <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-              <div id="flip">
-                  <button class="button button2">Забронювати зараз</button>
-                </div>
-              <div id="panel">
-                
-                <div class="slider-form">
-                  <form action="/action_page.php">
-                    <label for="fname">Ваш email</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your email..">
-      
-                    <label for="fname">Ім'я</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                
-                    <label for="lname">Прізвище</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-                    <label for="fname">Номер мобільного</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your number..">
-                
-                    <label for="country">Назва закладу</label>
-                    <select id="country" name="country">
-                      <option value="australia">Котедж "Гуцульський"</option>
-                      <option value="canada">Гостинний дім "КАМ.ІН"</option>
-                      <option value="usa">Готель Карпатські Зорі</option>
-                      <option value="usa">Шале в горах</option>
-                      <option value="usa">Готель Берег</option>
-                      <option value="usa">Вілла "Лоїза"</option>
-                    </select>
-                  
-                    <input type="submit" value="Забронювати">
-                  </form>          
-                </div>
-                
-              </div>
-          </div>
-          
-        </div>
-      </div>  
+      <!-- slider 
+      ...........
+      ...................
+      .........
+      -->
+  <div class="container-fluid ">      
+      <button id="flip" type="button" class="btn  btn-danger " >Забронювати житло зараз</button>    
   </div>
-  <!-- END jumbotron -->
+
+<div id="panel">
+
+      <div class="container">
+      <img src='img/logo1.png' height="75px" >
+      </div>
+<br>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+
+             <form class="form-horizontal" action="/action_page.php">
+      
+             <div class="form-group col-md-12">
+               <div class="col-xs-12 col-sm-12">
+                 <input type="email" class="form-control" id="email" placeholder="Ваш email" name="email">
+               </div>
+            </div>
+
+             <div class="form-group col-md-12">
+               <div class="col-sm-12">
+                 <input type="email" class="form-control" id="email" placeholder="Ім'я" name="email">
+               </div>
+             </div>
+         <div class="form-group col-md-12">
+            <div class="col-sm-12">
+             <input type="email" class="form-control" id="email" placeholder="Прізвище" name="email">
+           </div>
+         </div>
+        <div class="form-group col-md-12">
+            <div class="col-sm-12">          
+            <input type="telephone" class="form-control" id="pwd" placeholder="Введіть номер моб." name="pwd">
+          </div>
+        </div>
+        <div class="form-group col-md-12">
+            
+            <div class="col-sm-12">          
+              <input type="text" class="form-control" id="pwd" placeholder="Назва закладу" name="pwd">
+            </div>
+          </div>
+          <div class="form-group col-md-12">
+              
+              <div class="col-sm-12">          
+                <input type="telephone" class="form-control" id="pwd" placeholder="Додаткова інформація" name="pwd">
+              </div>
+            </div>
+        <!-- CALENDAR 
+        .......
+      .....
+    -->
+        <div class="form-group col-md-12">
+            <form action="/action_page.php" >
+              Дата приїзду:
+              <input type="date" name="comein">                      
+            </form>    
+        </div>
+        <div class="form-group col-md-12" >
+            <form action="/action_page.php" >
+              Дата від'їзду:
+              <input type="date" name="comein">                      
+            </form>    
+        </div>
+        <!-- END CALENDAR
+        ....
+      ......
+     -->
+
+        <div class="form-group col-md-12">        
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox" style='float:left'>
+                <label><input type="checkbox" name="remember">Підписатись на розсилку</label>
+              </div>
+            </div>
+          </div>
+        
+        <br>
+
+        <!-- BUTTON -->
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-success" style='float:right; margin-right:13px;'>ЗАБРОНЮВАТИ</button>
+        </div>
+       
+      </form>
+    </div>
+    <!-- COMMENTS -->
+   
+    <div class="col-md-6 ">
+        <br>
+      <img src='img/obama.jpg'><br>
+      <br>
+      
+      <p>Куди поїхати? Де краще винайняти житло? 
+        Сподіваємось ти швидко знайшов відповіді на всі ці питання.
+         Де б ти не вирішив зупинитись, ми підкажемо, як найкраще провести 
+         час та зробити відпустку у Карпатах насиченою!  </p>
+         <span style='font-weight:700'>За детальнішою інформацією телефонуйте: +43 922 54 97 042 (Барак) </span> 
+
+        
+    </div>
+    <!-- END COMMENTS -->
+  </div>
   
+  
+  </div>
+</div>
+</div>         
+
+<!-- end slider
+..............
+..........
+.... -->
+
+    </div>
+    
+  </div>
   
  <!-- ПЕРЕГЛЯНУТИ ЖИТЛО zabroniyvatu -->
  <div id='cont' class="container">    
@@ -252,7 +330,6 @@
         </div>
       </div>
       <br><br>
-      
       
       
       <footer class="container-fluid text-center">
