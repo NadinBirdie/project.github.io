@@ -105,6 +105,7 @@ div {
   }
   
   .text {
+    text-align:center;  
     white-space: nowrap; 
     color: white;
     font-size: 20px;
