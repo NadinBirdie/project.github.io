@@ -51,37 +51,51 @@
 </nav>
   </div>
  
-  <br><br>
+  
   <!-- Container (Contact Section) -->
 <div id="cont" class="container-fluid bg-grey">
-  <img class="rounded mx-auto d-block" src='img/logo1.png' style="height:100px; text-align:center;">
+  <img class="rounded mx-auto d-block contact-logo" src='img/logo1.png'>
  <br>
  <br>
+ <div class="container">
   <div class="row">
-    <div class="col-sm-5">
-      <p>Напишіть нам, ми зв'яжемось з вами протягом 24ох годин</p>
+    <div class="col-sm-5 col-md-5">
+      <p>Напишіть нам і ми зв'яжемось з вами протягом 24ох годин</p>
+      <p>З питань розміщення реклами, закладів житла чи окремих типів послуг, а також з питань співпраці звертайтесь:</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> Івано-Франківськ</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +38 050 645 45 86</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> itcluster@something.com</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +38 050 645 45 86  - секретарка Лєна</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> karpaty@info.com</p>
+      <img src='img/like.jpg' style='width:85%;'>
     </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
+    <div class="col-sm-7 col-md-7">          
+          <form action="/action_page.php">
+            <label for="fname">Ім'я</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="fname">Електронна адреса</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your email..">              
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:210px; width:100%"></textarea>
+            <input type="checkbox" checked="checked"> Підписатись на розсилку
+            <input type="submit" value="Надіслати">
+          </form>  
+    </div> 
+      <!--  -->    
+  </div>
   </div>
 </div>
+<br>
+<div class="container-fluid">
+    
+</div>
+<br><br>
+
+
+
+
+
+<footer class="container-fluid text-center">
+<p>Team number 2</p>                   
+</form>
+</footer>
 
    
 

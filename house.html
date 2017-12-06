@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   <script src="bootstrap-4.0.0-beta.2-dist/js/bootstrap.min.js"></script>
-</head>
+  </head>
 <body>
 
 <nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top">
@@ -75,7 +75,7 @@
                   <button class="button button2">Забронювати зараз</button>
                 </div>
               <div id="panel">                
-                <div class="slider-form">
+                <div class="slider-form">   
                   <form action="/action_page.php">
                     <label for="fname">Ваш email</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your email..">
@@ -88,27 +88,40 @@
       
                     <label for="fname">Номер мобільного</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your number..">
-                
-                    <label for="country">Назва закладу</label>
-                    <select id="country" name="country">
-                      <option value="australia">Котедж "Гуцульський"</option>
-                      <option value="canada">Гостинний дім "КАМ.ІН"</option>
-                      <option value="usa">Готель Карпатські Зорі</option>
-                      <option value="usa">Шале в горах</option>
-                      <option value="usa">Готель Берег</option>
-                      <option value="usa">Вілла "Лоїза"</option>
-                      <option value="australia">Готель та хостел "Янтари"</option>
-                      <option value="canada">Готель "GasThaus"</option>
-                      <option value="usa">Котедж "Вершина"</option>
-                      <option value="usa">Готель "12 місяців" та котедж "Травень"</option>
-                      <option value="usa">Котедж 'Holz House'</option>
-                      <option value="usa">Садиба "Стара Хата"</option>
-                      <option value="australia">Котедж «Ручай»</option>
-                      <option value="canada">Готель "Шале КрепДеШин"</option>
-                      <option value="usa">Садиба "Зарінок Карпат"</option>
-                      <option value="usa">Готель "Silverocks"</option>
-                      <option value="usa">Котедж "Whitehouse"</option>
-                      <option value="usa">Готель "Добош"</option>
+
+                    <label for="date" style='float:left'>Дата приїзду
+                        <i class="fa fa-calendar"  aria-hidden="true" >
+                            <input type="date" >
+                        </i>                        
+                    </label>                     
+                     
+                     <label for="date" style='float:center'>Дата від'їзду
+                        <i class="fa fa-calendar"  aria-hidden="true" >
+                            <input type="date" >
+                        </i>      
+                     </label>
+                    
+                   
+                <p><label for="hotel">Назва закладу</label></p>                
+                    <select id="hotel" name="hotel">
+                      <option value="hotel">Котедж "Гуцульський"</option>
+                      <option value="hotel">Гостинний дім "КАМ.ІН"</option>
+                      <option value="hotel">Готель Карпатські Зорі</option>
+                      <option value="hotel">Шале в горах</option>
+                      <option value="hotel">Готель Берег</option>
+                      <option value="hotel">Вілла "Лоїза"</option>
+                      <option value="hotel">Готель та хостел "Янтари"</option>
+                      <option value="hotel">Готель "GasThaus"</option>
+                      <option value="hotel">Котедж "Вершина"</option>
+                      <option value="hotel">Готель "12 місяців" та котедж "Травень"</option>
+                      <option value="hotel">Котедж 'Holz House'</option>
+                      <option value="hotel">Садиба "Стара Хата"</option>
+                      <option value="hotel">Котедж «Ручай»</option>
+                      <option value="hotel">Готель "Шале КрепДеШин"</option>
+                      <option value="hotel">Садиба "Зарінок Карпат"</option>
+                      <option value="hotel">Готель "Silverocks"</option>
+                      <option value="hotel">Котедж "Whitehouse"</option>
+                      <option value="hotel">Готель "Добош"</option>
                     </select>
                   
                     <input type="submit" value="Забронювати">
@@ -122,8 +135,8 @@
 .... -->
     </div>
 
-  
-  
+    
+    
  <!-- ПЕРЕГЛЯНУТИ ЖИТЛО  -->
  <div id='cont' class="container">    
         <div class="row">
@@ -147,7 +160,7 @@
               </div>
             </div>
           </div>
-          <br>
+          
           <div class="col-sm-4"> 
             <div class="panel panel-primary">
               <div class="panel-heading"><h5>Кривопілля</h5></div>
@@ -193,9 +206,9 @@
         </div>
       </div>
 
-      <br>
+<br>       
 
-      <div class="container">    
+<div class="container">    
         <div class="row">
           <div class="col-sm-4">
             <div class="panel panel-primary">
@@ -264,7 +277,8 @@
         </div>
       </div>
 
-      
+      <br> 
+
       <div id='cont' class="container">    
         <div class="row">
           <div class="col-sm-4 ">
@@ -404,7 +418,7 @@
         </div>
       </div>
 
-      
+      <br>
       <div id='cont' class="container">    
           <div class="row">
             <div class="col-sm-4 ">
@@ -558,7 +572,7 @@
               $("#panel").slideToggle("slow");
           });
       });
-
+      $("date").datetimepicker();
 
 
       </script>
