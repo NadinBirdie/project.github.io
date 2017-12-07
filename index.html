@@ -10,54 +10,144 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   <script src="bootstrap-4.0.0-beta.2-dist/js/bootstrap.min.js"></script>
+  <!-- skript on map with my key
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?=AIzaSyDlGgHyJVxJQ_7CLx-m7tACz2ARadzvs4M"></script>
+  <script src="js/java.js"></script>-->
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top">
-  <!-- Brand/logo -->
-  
-  <a href='index.html'><img src='img/logo45px.png'></a>
-   
-  
-  <!-- toggle menu -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-     <!-- Links -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-  <a class="nav-link" style='color:rgb(255, 255, 255)' href="#">Колиби</a>
+  <!--menu my-->
+
+  <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+    <div>
+      <a class="navbar-brand" href="#"><h4 class="font-weight-bold text-light">Karpaty-info</h4></a>
+      <a  href='index.html'><img src='img/logo45px.png' width="50px" height="50px" alt="logo"></a>
+</div>
+      <!-- toggle menu -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <span class="navbar-toggler-icon"><i class="fa fa fa-caret-down fa-2x text-muted" aria-hidden="true"></i></span>
+</button>
+
+
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <div class="btn bg-light" style="margin-left:3%">
+<!-- Links -->
+<ul class="navbar-nav">
+<li class="nav-item">
+  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn bg-primary text-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Маршрути
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <ul>
+              <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-telegram" aria-hidden="true"></i> Маршрут1</a></li>
+              <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-telegram" aria-hidden="true"></i> Маршрут2</a></li>
+              <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-telegram" aria-hidden="true"></i> Маршрут3</a></li>
+              <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-telegram" aria-hidden="true"></i> Маршрут4</a></li>
+              <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-telegram" aria-hidden="true"></i> Маршрут5</a></li>
+          </ul>
+          </div>
+        </div>
 </li>
 <li class="nav-item">
-  <a class="nav-link" style='color:rgb(255, 255, 255)' href="#">Здоров'я</a>
+    <button type="button" class="btn bg-primary text-light">Транспорт</button>
 </li>
 <li class="nav-item">
-  <a class="nav-link" style='color:rgb(255, 255, 255)' href="#">Розваги</a>
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn bg-primary text-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Туристу..
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <ul>
+            <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-cogs fa-2x text-success" aria-hidden="true"></i> Спорядження</a></li>
+            <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-home fa-2x text-success" aria-hidden="true"></i> Житло</a></li>
+            <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-cutlery fa-2x text-success" aria-hidden="true"></i> Харчування</a></li>
+            <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-info fa-2x text-success" aria-hidden="true"></i> Корисна інформація</a></li>
+          </ul>
+        </div>
 </li>
-<li class="nav-item">
-  <a class="nav-link" style='color:rgb(255, 255, 255)' href="#">Музеї</a>
+<li class="nav-item">       
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn bg-primary text-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Розваги
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <ul>
+                <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-telegram" aria-hidden="true"></i> Курорти</a></li>
+                <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-telegram" aria-hidden="true"></i> Музеї</a></li>
+                <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-telegram" aria-hidden="true"></i> Скелелазіння</a></li>
+                <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="#"><i class="fa fa-telegram" aria-hidden="true"></i> Лижний спорт</a></li>
+            </ul>
+            </div>
+  </li>
+  <li class="nav-item">
+          <button type="button" class="btn bg-primary text-light">Погода</button>
+  </li><li class="nav-item">
+      <button type="button" class="btn bg-primary text-light">Контакти</button>
 </li>
-<li class="nav-item">
-  <a class="nav-link" style='color:rgb(255, 255, 255)' href="#">Маршрути</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" style='color:rgb(255, 255, 255)' href="house.html">Житло</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" style='color:rgb(255, 255, 255)' href="contacts.html">Контакти</a>
-</li>
+  <li class="nav-item">
+             <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn bg-primary text-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Вебкамери
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <ul>
+                    <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item " href="https://bukovel.com/ru/cams/74" target="_blank"><i class="fa fa-telegram" aria-hidden="true" style="margin-left: 5px"></i> Буковель</a></li>
+                    <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="https://snig.info/ru" target="_blank"><i class="fa fa-telegram" aria-hidden="true" style="margin-left: 5px"></i> Курорти</a></li>
+                    <li class="markerdropmenu"><a class="navlinkcolor" class="dropdown-item" href="http://webcam.guru.ua/ski/" target="_blank"><i class="fa fa-telegram" aria-hidden="true" style="margin-left: 5px"></i> Гірськолижні<br>комплекси</a></li>
+                  </ul>
+                </div>
+            </div>
+  </li>
+  <li class="nav-item">
+       
+      <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn bg-primary text-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Вхід
+      </button>
+      <div class="dropdown-menu" class"ttttt" aria-labelledby="btnGroupDrop1">
+          <ul class="nav nav-tabs">
+              <li class="nav-item">
+                  <form class="px-4 py-3">
+                      <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input">
+                          Remember me
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Вхід</button>
+                      <button type="submit" class="btn btn-primary">login</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item"  href="#">New around here? Sign up</a>
+                    <a class="dropdown-item" href="#">Forgot password?</a>
+              </li>
+            </ul>  
+      </div>
+  </li>
 </ul>
-</nav>
+</div>
+
+
+
+  <div class="markernone">
+      <a class="text-light" href="https://www.facebook.com/iryna.bilous.50" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true" ></i></a><!--facebook-->
+      <a class="text-light" href="https://www.instagram.com/arina_.mars/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="margin-left: 5px"></i></a>
+      <a class="text-light" href="https://plus.google.com/u/0/114968160782342970283" target="_blank"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true" style="margin-left: 5px"></i></a>
+      <!--<a class="text-muted" href="#" target="_blank"><i class="fa fa-telegram fa-2x" aria-hidden="true" style="margin-left: 5px"></i></a>-->
   </div>
-  <!-- CAROUSEL
-  .......................
-  ..................
-  .
-  .................
-  -
-  --> 
-      <div id="demo" class="carousel slide" data-ride="carousel">
+</nav>
+  <!-- CAROUSEL--> 
+      <div id="demo" class="carousel slide" data-ride="carousel" style="margin-top:5%">
           <ul class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
             <li data-target="#demo" data-slide-to="1"></li>
@@ -65,51 +155,400 @@
             <li data-target="#demo" data-slide-to="3"></li>
           </ul>
           <div class="carousel-inner">
-              <div class="carousel-item active">
-                <!--<h1 class="textlogo">ДОСЯГАЙТЕ ВЕРШИН РАЗОМ З НАМИ!</h1>-->
-                <img src="img/k3.jpg" alt="Bukovel"  width="100%">  
-              </div>
-              <div class="carousel-item">
-                <img src="img/slide2.jpg" alt="house" width="100%">
-              </div>
-              <div class="carousel-item">
-                <img src="img/slide3.jpg" alt="house" width="100%">
-              </div>
-              <div class="carousel-item">
-                <img src="img/k4.jpg" alt="house" width="100%">
-              </div>
-              <div class="carousel-item">
-                <img src="img/k1.jpeg" alt="house" width="100%">
-              </div>
-              <div class="carousel-item">
-                <img src="img/k2.jpg" alt="house" width="100%">
-              </div>
+            <div class="carousel-item active">
+              <!--<h1 class="textlogo">ДОСЯГАЙТЕ ВЕРШИН РАЗОМ З НАМИ!</h1>-->
+              <img src="img/k3.jpg" alt="Bukovel"  width="100%">  
             </div>
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-          </div> 
- 
-<!-- CAROUSEL
-  .......................
-  ..................
-  .
-  .................
-  -
-  -->
+            <div class="carousel-item">
+              <img src="img/slide2.jpg" alt="house" width="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide3.jpg" alt="house" width="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="img/k4.jpg" alt="house" width="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="img/k1.jpeg" alt="house" width="100%">
+            </div>
+            <div class="carousel-item">
+              <img src="img/k2.jpg" alt="house" width="100%">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div> 
+
+<!-- CAROUSEL-->
 <br><br>
-  
+  <!--
+<nav aria-label="breadcrumb" role="navigation">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+-->
+
+<!-- карта спливаюча-->
+
+<div id="accordion" role="tablist">
+    <div class="card">
+      <div class="card-header bg-primary" role="tab" id="headingOne" ata-placement="top" title="натисніть тут, щоб побачити карту">
+        <h5 class="mb-0" style="text-align:center">
+          <a class="text-white"  style="text-decoration:none" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Туристична карта
+          </a>
+        </h5>
+      </div>
+      <div id="collapseOne" class="collapse show"  role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+              <iframe  src="http://turkarta.com/#lat=48.93591&lng=25.6592&z=8&m=2" alt="map" class="map"></iframe>
+          </div>
+        </div>
+      </div>
+</div>
 
 
+      <div class="card-deck">
+        <div class="card bg-secondary">
+          <h3  class="card-title bg-primary text-light" style="text-align:center">Замовити тур</h3>
+          <div class="card-body">
+              <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Пароль</label>
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress">Адрес</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="123">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress2">Адрес</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="дані">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="inputCity">Місто</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputState">Область</label>
+                      <select id="inputState" class="form-control">
+                        <option selected>Вибрати...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputZip"> файл</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> запам'ятати
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Надіслати</button>
+                </form>
+          </div>
+        </div>
+       
+        <div class="card bg-secondary">
+            <h3 class="card-title bg-primary text-light" style="text-align:center">info</h3>
+          <div class="card-body">
+              <div class="card-group">
+                  <div class="card" style="margin:3%;" >
+                    <!-- weather widget start -->
+                    <a style="text-align:center"  target="_blank" href="http://www.booked.net/weather/ivano-frankivs-k-127168">
+                      <img style="margin:3%;" src="https://w.bookcdn.com/weather/picture/3_127168_1_29_137AE9_430_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=966&anc_id=76984"  alt="booked.net"/>
+                    </a>
+                    <!-- weather widget end -->
+                     </div>
+                  </div>
+                  <div class="card">
+                    
+                    <div class="card-body">
+                        <center>
+                            <script language="javascript" type="text/javascript">
+                            var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+                            var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+                            
+                            //  DECLARE AND INITIALIZE VARIABLES
+                            var Calendar = new Date();
+                            
+                            var year = Calendar.getFullYear();     // Returns year
+                            var month = Calendar.getMonth();    // Returns month (0-11)
+                            var today = Calendar.getDate();    // Returns day (1-31)
+                            var weekday = Calendar.getDay();    // Returns day (1-31)
+                            
+                            var DAYS_OF_WEEK = 7;    // "constant" for number of days in a week
+                            var DAYS_OF_MONTH = 31;    // "constant" for number of days in a month
+                            var cal;    // Used for printing
+                            
+                            Calendar.setDate(1);    // Start the calendar day at '1'
+                            Calendar.setMonth(month);    // Start the calendar month at now
+                            
+                            
+                            /* VARIABLES FOR FORMATTING
+                            NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+                                  tags to customize your caledanr's look. */
+                            
+                            var TR_start = '<TR>';
+                            var TR_end = '</TR>';
+                            var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+                            var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+                            var TD_start = '<TD WIDTH="30"><CENTER>';
+                            var TD_end = '</CENTER></TD>';
+                            
+                            /* BEGIN CODE FOR CALENDAR
+                            NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+                            tags to customize your calendar's look.*/
+                            
+                            cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+                            cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+                            cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+                            cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+                            cal += TR_start;
+                            
+                            //   DO NOT EDIT BELOW THIS POINT  //
+                            
+                            // LOOPS FOR EACH DAY OF WEEK
+                            for(index=0; index < DAYS_OF_WEEK; index++)
+                            {
+                            
+                            // BOLD TODAY'S DAY OF WEEK
+                            if(weekday == index)
+                            cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+                            
+                            // PRINTS DAY
+                            else
+                            cal += TD_start + day_of_week[index] + TD_end;
+                            }
+                            
+                            cal += TD_end + TR_end;
+                            cal += TR_start;
+                            
+                            // FILL IN BLANK GAPS UNTIL TODAY'S DAY
+                            for(index=0; index < Calendar.getDay(); index++)
+                            cal += TD_start + '  ' + TD_end;
+                            
+                            // LOOPS FOR EACH DAY IN CALENDAR
+                            for(index=0; index < DAYS_OF_MONTH; index++)
+                            {
+                            if( Calendar.getDate() > index )
+                            {
+                              // RETURNS THE NEXT DAY TO PRINT
+                              week_day =Calendar.getDay();
+                            
+                              // START NEW ROW FOR FIRST DAY OF WEEK
+                              if(week_day == 0)
+                              cal += TR_start;
+                            
+                              if(week_day != DAYS_OF_WEEK)
+                              {
+                            
+                              // SET VARIABLE INSIDE LOOP FOR INCREMENTING PURPOSES
+                              var day  = Calendar.getDate();
+                            
+                              // HIGHLIGHT TODAY'S DATE
+                              if( today==Calendar.getDate() )
+                              cal += highlight_start + day + highlight_end + TD_end;
+                            
+                              // PRINTS DAY
+                              else
+                              cal += TD_start + day + TD_end;
+                              }
+                            
+                              // END ROW FOR LAST DAY OF WEEK
+                              if(week_day == DAYS_OF_WEEK)
+                              cal += TR_end;
+                              }
+                            
+                              // INCREMENTS UNTIL END OF THE MONTH
+                              Calendar.setDate(Calendar.getDate()+1);
+                            
+                            }// end for loop
+                            
+                            cal += '</TD></TR></TABLE></TABLE>';
+                            
+                            //  PRINT CALENDAR
+                            document.write(cal);
+                            
+                            //  End -->
+                            </script>
+                            </center>
+                            <br/>
+                            
+                          </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
 
 
-<footer class="container-fluid text-center">
-  <p>Team number 2</p>                   
-  </form>
+<!-- перхід на інші сторінки-->
+  <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+<!-- футер -->
+<footer>
+ 
+  <!-- наша команда-->
+  <div class="card  bg-primary mb-3" >
+      <div class="card-header" align="center"><h2 class="font-weight-bold text-light">Наша команда</h2></div>
+      <div class="card-body">
+        <h4 class="card-title text-dark">Люди які допоможуть у вирішенні ваших запитаннь</h4>
+        <p class="card-text text-dark">інформація, контактні дані</p>
+        <!-- зразок як робити спливаючу підказку-->
+       <!-- <button class="btn btn-warning" type="button" href="#element" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="підказка тут можна пистаи багато різного тексту">
+            <a href="https://www.facebook.com/">посилання на фейсбук</a>
+          </button>-->
+          <script>$('element').tooltip('show')</script>
+      
+  <div class="card-deck">
+      <div class="card">
+          <img class="card-img-top"  src='img/l1.png' alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title" ><h3 class="font-weight-bold">Білоус Ірина</h3></h4>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top"  src='img/l1.png' alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Саша Кісіль</h4>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top"  src='img/l1.png' alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Лубик Надія</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+          <img class="card-img-top"  src='img/l1.png' alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Кудла Василь</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- різна інформація картками-->
+  <div class="card-columns">
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title that wraps to a new line</h4>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+    <div class="card p-3">
+      <blockquote class="blockquote mb-0 card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card bg-primary text-white text-center p-3">
+      <blockquote class="blockquote mb-0">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+        <footer class="blockquote-footer">
+          <small>
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <!-- карта місцезнаходження організаціі-->
+    <div class="card">
+        <iframe class="mapofice" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2622.0629107905534!2d24.711999841678654!3d48.914193643914665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YHQsNGF0LDRgNC-0LLQsCAyMw!5e0!3m2!1sru!2sua!4v1512315193975" allowfullscreen></iframe>
+        
+    </div>
+    <div class="card p-3 text-right">
+      <blockquote class="blockquote mb-0">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card bg-dark text-white">
+      <img class="card-img" src="img/k5.jpg" alt="Card image">
+      <div class="card-img-overlay">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
 </footer>
-
 </body>
 </html>

@@ -21,33 +21,25 @@ div {
 #demo{
     margin-top: 45px;
 }
-
-.panel{
-    border: 3px solid rgb(204, 224, 243);    
-    border-radius: 6px;
-    padding: 1px;
-    background-color: #E9ECEF;
+#cont{
+    margin-top: 100px;
 }
 
 .panel-heading{
-    position: relative;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    position: absolute;
+    border-bottom-right-radius: 5px;
     color: white;
     padding: 3px;
-    padding-left: 5px;
     box-sizing: border-box;
-    background: #00b1c6;
+    background: rgba(0,0,0,0.5);
 }
 .panel-footer{    
-    background: #E9ECEF;
-    height: 2.3em;
+    background: re
 
 }
 
 .price{
-    margin-top: 5px;
-    margin-left: 2px;
+    margin-top: 2px;
     font-size: 1,25em;
     line-height: 1em;
     color: #00b1c6;
@@ -61,137 +53,62 @@ div {
 }
 .pull-right{
     float:right;
-    margin-top: 3px;
-    margin-right: 1.5px;
 }
-.jumbotron{
-    margin-top: 56px;
-}
-/*.textlogo {        
+ 
+.textlogo {
     position: absolute;
-    top: 15%;
-    left: 25%;
+    top: 85%;
+    left: 55%;
     color: rgb(39, 37, 37);
-    face:"Georgia";
+    font-style: arial;
     font-size: 30px;
-}*/
-/* IMAGE OVERLAY HOVER */
-.cont-hover {
-    position: relative;
-    width: 100%;    
-  }
-  
-  .img-responsive {
-    display: block;
-    width: 100%;
-    height: auto;
- }
-  
-  .overlay {    
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .9s ease;
-  }
-  
-  .cont-hover:hover .overlay {
-    height: 100%;
-    opacity: 0.85;
-  }
-  
-  .text {
-    white-space: nowrap; 
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
-
-  /*END  IMAGE OVERLAY HOVER */
-
-   /* SLIDEr */
-  #panel, #flip {
-    padding: 5px;
-    text-align: center;
-    background-color: #E9ECEF;
-    border: solid 1px #E9ECEF;
 }
 
-#panel {
-    padding: 50px;
-    display: none;
-}
-/* SLIDER FORMS */
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.slider-form {
-    border-radius: 5px;
-    background-color: #E9ECEF;
-    padding: 20px;
-}
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-.button2 {
-    box-shadow: 4px 4px 16px 0 rgba(0,0,0,0.14),0 7px 10px 0 rgba(0,0,0,0.07);
-}
-.button2:hover{
-    background-color: rgb(53, 155, 57);
+.map {
+    height: 400px;
+    width: 100%; 
    }
-
-/* end SLIDEr */
-
-.contact-logo{
-    height:100px; 
-    text-align:center;
-    margin-top: 49px;
+   .mapofice {
+    width: 100% 
+   }
+.maptext {
+    text-align: center;
+}
+.turmap {
+    width: 100%
+    backgroun-color: red;
 }
 
+.nav-item {
+    margin: 1px;
+}
 
-  footer{
-      height: 300px;
-      background-color: #E9ECEF;
-  }
+.markernone {
+        list-style-type: none;
+        margin-left: 6%;
+}
+
+.markerdropmenu {
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: -25%;
+}
+
+.navlinkcolor:link, .navlinkcolor:visited { 
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    margin-left: 2%;
+}
+.navlinkcolor:hover, .a:active {
+    background-color: rgb(12, 12, 12);
+    color: rgb(241, 238, 238);
+}
+.bordervideo {
+    border: 1px solid rgb(212, 205, 205);
+}
+
