@@ -4,16 +4,20 @@ div {
     display: block;
 }
 
+.navbar {
+    background-color: rgb(51, 99, 121);
+}
+
 .nav-item .nav-link:hover {
     font-size: 17px;
     color: rgb(0, 74, 170);
 }
 .nav-item:hover{
-    border-top: 1px solid rgb(0, 17, 39);
+    border-top: 1px solid rgb(255, 255, 255);
 }
 .navbar-nav{
     margin-left: 10px;
-}
+}  
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -33,11 +37,11 @@ div {
     position: relative;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 3px;
     padding-left: 5px;
     box-sizing: border-box;
-    background: #00b1c6;
+    background: #E9ECEF;
 }
 .panel-footer{    
     background: #E9ECEF;
@@ -131,7 +135,10 @@ div {
     padding: 50px;
     display: none;
 }
-/* SLIDER FORMS */
+/* SLIDER FORMS
+........
+....... */
+
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -183,14 +190,35 @@ input[type=submit]:hover {
     background-color: rgb(53, 155, 57);
    }
 
-/* end SLIDEr */
+/* end SLIDEr
+.............
+........... */
 
 .contact-logo{
     height:100px; 
     text-align:center;
-    margin-top: 49px;
+    margin-top: 56px;
 }
 
+
+/* ..............
+...............
+...........FOR HOUSE-?.HTML
+....................
+........... */
+.header  {
+    margin-top: 70px;
+}
+.header img{
+    width:100%;
+     height:100%;
+}
+.about-house{
+    background: #E9ECEF;
+}
+h2 {
+    display: block;
+}
 
   footer{
       height: 300px;
