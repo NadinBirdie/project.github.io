@@ -205,11 +205,6 @@ input[type=submit]:hover {
 .............
 ........... */
 
-.contact-logo{
-    height:100px; 
-    text-align:center;
-    margin-top: 56px;
-}
 
 
 /* ..............
@@ -431,6 +426,10 @@ h2 {
   .........
   ...........
   ...............................*/
+#cont1{
+    background: url('../img/bg-contacts5.png') repeat-x;
+    height: 138px;
+}
 
   footer{
       height: 300px;
