@@ -64,8 +64,38 @@
  <div class="container header-house">
     <div class="row">
       <div class="col-sm-8 marg-img">
-              <img src="img/house1.jpg" class="img-rounded" alt="Image">
-      </div>
+              <img id='myImg-house' src="img/house1.3.jpg" class="img-rounded" alt="Image">
+              
+            </div>
+          <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById('myModal');
+              
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById('myImg-house');
+              var modalImg = document.getElementById("img01");
+              var captionText = document.getElementById("caption");
+              img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+              }
+              
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[0];
+              
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() { 
+                  modal.style.display = "none";
+              }
+              </script>
+              
 
 
       <div class="col-sm-4 marg-img">
@@ -78,7 +108,9 @@
         </div>
         <div class="well price">
            <p>Вартість 2200 грн/котедж</p>
+           <p>тел.+38 (097) 793-12-90</p>
         </div>
+
       </div>
     </div>
     <hr>
@@ -93,10 +125,10 @@
       ...................
       .........-->
       
-              <div id="flip">
+              <div id="flip-reserve">
                   <button class="button button2">Забронювати зараз</button>
                 </div>
-              <div id="panel">                
+              <div id="panel-reserve">                
                 <div class="slider-form-house">   
                   <form action="/action_page.php">
                     <label for="fname">Ваш email</label>
@@ -314,7 +346,83 @@
     </div>
   </div>  
   <br>
+<div class="container">
+        <!-- slider 
+      ...........
+      ...................
+      .........-->
+      
+      <div id="flip-reserve2">
+        <button class="button button2">Забронювати зараз</button>
+      </div>
+    <div id="panel-reserve2">                
+      <div class="slider-form-house">   
+        <form action="/action_page.php">
+          <label for="fname">Ваш email</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your email..">
 
+          <label for="fname">Ім'я</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Прізвище</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="fname">Номер мобільного</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your number..">
+
+          <label for="date" style='float:left'>Дата приїзду
+              <i class="fa fa-calendar"  aria-hidden="true" >
+                  <input type="date" >
+              </i>                        
+          </label>                     
+           
+           <label for="date" style='float:center'>Дата від'їзду
+              <i class="fa fa-calendar"  aria-hidden="true" >
+                  <input type="date" >
+              </i>      
+           </label>
+          
+         
+      <p><label for="hotel">Назва закладу</label></p>                
+          <select id="hotel" name="hotel">
+            <option value="hotel">Котедж "Гуцульський"</option>
+            <option value="hotel">Гостинний дім "КАМ.ІН"</option>
+            <option value="hotel">Готель Карпатські Зорі</option>
+            <option value="hotel">Шале в горах</option>
+            <option value="hotel">Готель Берег</option>
+            <option value="hotel">Вілла "Лоїза"</option>
+            <option value="hotel">Готель та хостел "Янтари"</option>
+            <option value="hotel">Готель "GasThaus"</option>
+            <option value="hotel">Котедж "Вершина"</option>
+            <option value="hotel">Готель "12 місяців" та котедж "Травень"</option>
+            <option value="hotel">Котедж 'Holz House'</option>
+            <option value="hotel">Садиба "Стара Хата"</option>
+            <option value="hotel">Котедж «Ручай»</option>
+            <option value="hotel">Готель "Шале КрепДеШин"</option>
+            <option value="hotel">Садиба "Зарінок Карпат"</option>
+            <option value="hotel">Готель "Silverocks"</option>
+            <option value="hotel">Котедж "Whitehouse"</option>
+            <option value="hotel">Готель "Добош"</option>
+          </select>
+        
+          <input type="submit" value="Забронювати">
+        </form> 
+      </div>
+    </div>
+    <script> 
+      $(document).ready(function(){
+          $("#flip-reserve2").click(function(){
+              $("#panel-reserve2").slideToggle("slow");
+          });
+      });
+      $("date").datetimepicker();
+      
+    </script>
+<!-- end slider
+..............
+..........
+.... -->
+</div>
 <div class="container">
     <h3>Як доїхати:</h3>
     <p></p>Котедж знаходиться на початку новозбудованої дороги до курорту Буковель
@@ -325,24 +433,21 @@
 </div>
 
 <br>
-<div id="map" style="width:100%;height:400px;background:yellow">My map will go here</div>
+<div id="map" style="width:100%;height:200px;background:white">My map will go here</div>
 
 
 <script>
     function myMap() {
       var mapCanvas = document.getElementById("map");
       var mapOptions = {
-        center: new google.maps.LatLng(48.361, 24.4302), zoom: 13
+        center: new google.maps.LatLng(48.3053853, 24.473891), zoom: 13
       };
       var map = new google.maps.Map(mapCanvas, mapOptions);
     }
     </script>
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO6gJkm9-qPClrgI2O5zirijUV3KuVZow&callback=myMap"></script>
-    <!--
-    To use this code on your website, get a free API key from Google.
-    Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-    -->
+   
     
    
       
@@ -358,13 +463,14 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script> 
       $(document).ready(function(){
-          $("#flip").click(function(){
-              $("#panel").slideToggle("slow");
+          $("#flip-reserve").click(function(){
+              $("#panel-reserve").slideToggle("slow");
           });
       });
       $("date").datetimepicker();
       
 </script>
+
 
 <script>
     // Get the modal
