@@ -464,8 +464,7 @@ h2 {
 
 } 
 
-
- .map {
+.map {
     width: 90%;
     margin: 2% 5% auto;
 }
@@ -508,4 +507,3 @@ h2 {
     background : rgba(20, 20, 20, 0.9);
     color: #fff;
 }
-   
