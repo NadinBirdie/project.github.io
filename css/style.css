@@ -464,11 +464,8 @@ h2 {
 
 } 
 
-/* Ira  style*/
-
 .map {
     width: 90%;
-    height: 350px;
     margin: 2% 5% auto;
 }
    
@@ -510,5 +507,3 @@ h2 {
     background : rgba(20, 20, 20, 0.9);
     color: #fff;
 }
-   
-   /* Ira*/
