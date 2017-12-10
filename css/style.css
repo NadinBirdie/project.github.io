@@ -431,7 +431,36 @@ h2 {
     height: 138px;
 }
 
-  footer{
-      height: 300px;
-      background-color: #E9ECEF;
+
+  /* Nadiia */
+  
+  video { 
+    width: 100% ;
+    display: block;
+    margin: 0 auto;
   }
+
+
+
+.videotext {
+
+    
+    text-align: center;
+    margin: 100px 30px 20px 30px;
+    text-indent: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: serif;
+    font-style: italic;
+    color: rgb(43, 44, 40);
+    
+}
+
+.videoimage{
+ width: 200px;
+ height: 200px;
+ margin-top: 50%;
+ 
+
+} 
+
