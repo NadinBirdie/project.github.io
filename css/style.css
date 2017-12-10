@@ -431,7 +431,79 @@ h2 {
     height: 138px;
 }
 
-  footer{
-      height: 300px;
-      background-color: #E9ECEF;
+
+  /* Nadiia */
+  
+  video { 
+    width: 100% ;
+    display: block;
+    margin: 0 auto;
   }
+
+
+
+.videotext {
+
+    
+    text-align: center;
+    margin: 100px 30px 20px 30px;
+    text-indent: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: serif;
+    font-style: italic;
+    color: rgb(43, 44, 40);
+    
+}
+
+.videoimage{
+ width: 200px;
+ height: 200px;
+ margin-top: 50%;
+ 
+
+} 
+
+.map {
+    width: 90%;
+    margin: 2% 5% auto;
+}
+   
+.mapofice {
+    width: 100%;
+}
+   
+.colorsocial {
+    color: rgb(0, 0, 0);
+    margin: 3%;
+}
+   
+.borderfooter {
+     border: 1px solid rgb(214, 218, 217);
+     border-radius: 5px;
+     box-shadow: 0 0 0 1px rgb(58, 55, 55), 0 0 13px rgb(20, 20, 20);
+}
+
+.teamwidth {
+    width: 90%;
+    margin: 2% 5% auto;
+}
+
+.cartfootertitle {
+    margin: auto; 
+    margin-top: 1%;
+}  
+.maptitle {
+    text-align:center;
+    margin-left:4%;
+    margin-right:3%;
+}
+
+.bgimg-team {
+    width: 100%;
+    margin: auto;
+}
+.footer2-backgrond-card {
+    background : rgba(20, 20, 20, 0.9);
+    color: #fff;
+}
