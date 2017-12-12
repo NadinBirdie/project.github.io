@@ -70,9 +70,10 @@
 </div>   
     <div class="card-group row" style="margin: 2%">
       <div class="card col-4" style="min-width:20rem; margin: auto;  margin-top:56px; border: none;">
-              <h4 class="card-title text-center">Замовити тур</h4>
+        
+          <div class="card-header border-primary"><h4 class="card-title text-center">Замовити тур</h4></div>
         <div class="card-body" style="margin: 2%" >
-          <form  style="background-image:url(img/zy1.jpg);">
+          <form>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="inputEmail4">Ім'я</label>
@@ -88,18 +89,17 @@
                   </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-7">
                   <label for="inputAddress2">Адрес</label>
                   <input type="text" class="form-control" id="inputAddress2" placeholder="Адрес">
                 </div>
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-5">
                     <label for="inputCity">Місто</label>
                     <input type="text" class="form-control" id="inputCity">
               </div>
               <div class="form-row">
-                <div class="form-group col-md-2">
+                <div class="form-group col-md-6">
                       <label for="inputOld">Вік</label>
-                      <input type="text" class="form-control" id="inputCity">
                       <select id="inputOld" class="form-control">
                           <option selected>Вибрати...</option>
                           <option>10</option>
@@ -111,9 +111,8 @@
                           <option>...</option>
                         </select>
                 </div>
-                <div class="form-group col-md-2">
+                <div class="form-group col-md-6">
                       <label for="inputGender">Стать</label>
-                      <input type="text" class="form-control" id="inputCity">
                       <select id="inputGender" class="form-control">
                           <option selected>Вибрати...</option>
                           <option>Ч</option>
@@ -121,7 +120,8 @@
                       </select>
                 </div>
                 </div>
-                <div class="form-group">
+                
+                <div class="form-group ">
                   <label for="inputState">Вибрати маршрут</label>
                   <select id="inputState" class="form-control">
                     <option selected>Вибрати...</option>
@@ -134,7 +134,8 @@
                     <option>Мармароський масив</option>
                   </select>
                   </div>
-                  <div class="form-group">
+                  <div class="form-row">
+                  <div class="form-group col-md-5">
                     <label for="inputState">Кількість днів</label>
                     <select id="inputState" class="form-control">
                       <option selected>Вибрати...</option>
@@ -147,7 +148,7 @@
                       <option>7</option>
                     </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-7">
                         <label for="inputState">Кількість чоловік</label>
                         <select id="inputState" class="form-control">
                           <option selected>Вибрати...</option>
@@ -160,6 +161,7 @@
                           <option>7</option>
                         </select>
                         </div>
+                      </div>
                   <div class="form-group">
                     <div class="form-group ">
                       <label for="date">Вибрати дату
@@ -576,10 +578,10 @@
         </a>
       </h5>
     </div>
-    <div id="collapseThree" class="collapse fonmap" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" >
+    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" >
       <div class="card-body">
         
-        <iframe class="map" src="http://turkarta.com/#lat=48.82573&lng=24.76107&z=9&m=2" alt="map"  allowfullscreen></iframe>
+        <iframe class="map" src="http://turkarta.com/#lat=48.82573&lng=24.76107&z=9&m=2" alt="map"></iframe>
         
       </div>
     </div>
