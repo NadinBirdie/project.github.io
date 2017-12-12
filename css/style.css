@@ -552,10 +552,15 @@ h2 {
     font:16px/26px Georgia, Garamond, Serif;
     overflow:auto;
 }
-.fon-prozoryj {
-    background : rgba(70, 69, 69, 0.3);color: rgb(15, 15, 15);
+
+.team-button {
+    width:9rem; 
+    margin:1%; 
+    opacity: 0.8;
+}    
+.border-team {
+    border: 1px solid rgb(214, 218, 217);
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgb(58, 55, 55), 0 0 13px rgb(20, 20, 20);
 }
- 
-    
-    
     
