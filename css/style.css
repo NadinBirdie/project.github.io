@@ -557,10 +557,92 @@ h2 {
     width:9rem; 
     margin:1%; 
     opacity: 0.8;
-}    
+}
+   
 .border-team {
     border: 1px solid rgb(214, 218, 217);
     border-radius: 5px;
     box-shadow: 0 0 0 1px rgb(58, 55, 55), 0 0 13px rgb(20, 20, 20);
 }
-    
+
+.margin-carusel {
+    margin-top: 56px;
+}
+
+
+/* Large desktop */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .margin-carusel {
+        margin-top: 58px;
+    }
+}
+/* Large desktop */
+@media (min-width: 980px) and (max-width: 1200px) {
+    .margin-carusel {
+        margin-top: 58px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .margin-carusel {
+        margin-top: 57px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 640px) and (max-width: 767px) {
+    .margin-carusel {
+        margin-top: 20px;
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (min-width: 600px) {
+    .margin-carusel {
+        margin-top: 20px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) {
+    .margin-carusel {
+        margin-top: 20px;
+    }
+}
+/* Landscape phones and down */
+@media (max-width: 420px) {
+    .margin-carusel {
+        margin-top: 70px;
+    }
+}
+/* Landscape phones and down */
+@media (min-width: 412px) {
+    .margin-carusel {
+        margin-top: 60px;
+    }
+}
+/* Landscape phones and down */
+@media (min-width: 384px) {
+    .margin-carusel {
+        margin-top: 50px;
+    }
+}
+/* Landscape phones and down */
+@media (width: 375px) {
+    .margin-carusel {
+        margin-top: 50px;
+    }
+}
+/* Landscape phones and down */
+@media (min-width: 360px) {
+    .margin-carusel {
+        margin-top: 50px;
+    }
+}
+/* Landscape phones and down */
+@media (min-width: 320px) {
+    .margin-carusel {
+        margin-top: 57px;
+    }
+}
+
