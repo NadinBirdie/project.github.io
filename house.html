@@ -92,30 +92,31 @@
                 </div>
               <div id="panel-reserve">                
                 <div class="slider-form">   
-                  <form action="/action_page.php">
-                    <label for="fname">Ваш email</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your email..">
+                  <form action="" method='post' name='test' id='houseForm' onsubmit="formhotel()">
+                    <label for="email">Ваш email</label>
+                    <input type="text" id="email" value='' name="email" placeholder="Your email..">
       
-                    <label for="fname">Ім'я</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" value='' name="name" placeholder="Your name..">
                 
-                    <label for="lname">Прізвище</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="surrname">Прізвище</label>
+                    <input type="text" id="surrname" name="surrname" value='' placeholder="Your last name..">
       
-                    <label for="fname">Номер мобільного</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your number..">
-
-                    <label for="date" style='float:left'>Дата приїзду
+                    <label for="telephone">Номер мобільного</label>
+                    <input type="text" id="telephone" value='' name="telephone" placeholder="Your number..">
+                   
+                    <label for="date"  style='float:left'>Дата приїзду
                         <i class="fa fa-calendar"  aria-hidden="true" >
-                            <input type="date" >
+                            <input type="date" id='datecome' name="datecome" value='' >
                         </i>                        
                     </label>                     
                      
-                     <label for="date" style='float:center'>Дата від'їзду
+                     <label for="date"  style='float:center'>Дата від'їзду
                         <i class="fa fa-calendar"  aria-hidden="true" >
-                            <input type="date" >
+                            <input type="date" id='dateout' name='dateout' value=''>
                         </i>      
                      </label>
+                  
                     
                    
                 <p><label for="hotel">Назва закладу</label></p>                
@@ -140,7 +141,37 @@
                       <option value="hotel">Готель "Добош"</option>
                     </select>
                   
-                    <input type="submit" value="Забронювати">
+                    <input type="submit" onclick="formhotel(document.getElementById('houseForm'))" name="submit" value="Забронювати">
+                   
+                   <script type="text/javascript">
+
+                        function formhotel (form){
+                          fail = false;
+                          var email = form.email.value;
+                          var name = form.name.value;
+                          var surrname = form.surrname.value;
+                          var telephone = form.telephone.value;
+                          var datecome = form.datecome.value;
+                          var dateout = form.dateout.value;
+                          if ( email == '' || email == ' ')
+                              fail = 'Вкажіть, будь ласка, свій email';
+                          else if (name == '' || name == ' ')
+                              fail = 'Вкажіть, будь ласка, своє ім\'я ';
+                          else if  (surrname == '' || surrname == ' ')
+                              fail = 'Вкажіть, будь ласка, своє прізвище '; 
+                          else if (telephone == '')  
+                              fail = 'Вкажіть, будь ласка, свій номер телефону '; 
+                           else if (datecome == '')
+                              fail = 'Вкажіть, будь ласка, дату приїзду';
+                           else if (dateout == '')
+                              fail = 'Вкажіть, будь ласка, дату відїзду'; 
+                              if(fail)             
+                              alert(fail);
+                             
+                              else
+                              window.location = 'http://google.com';
+                        }
+                        </script> 
                   </form> 
                 </div>
               </div>
@@ -652,7 +683,7 @@
               $("#panel-reserve").slideToggle("slow");
           });
       });
-      $("date").datetimepicker();
+   
 
 
       </script>
