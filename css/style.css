@@ -530,6 +530,9 @@ h2 {
     color: #fff;
 }
 
+.bginput-tur {
+    background-color: rgb(31, 125, 184);
+}
 /* Box styles */
 .myBoxira  {
     padding: 3%;
@@ -566,10 +569,8 @@ h2 {
 }
 
 .margin-carusel {
-    margin-top: 56px;
+    margin-top: 55px;
 }
-
-
 /* Large desktop */
 @media (min-width: 1201px) and (max-width: 1600px) {
     .margin-carusel {
@@ -579,7 +580,7 @@ h2 {
 /* Large desktop */
 @media (min-width: 980px) and (max-width: 1200px) {
     .margin-carusel {
-        margin-top: 58px;
+        margin-top: 56px;
     }
 }
 
@@ -644,5 +645,12 @@ h2 {
     .margin-carusel {
         margin-top: 57px;
     }
+}
+
+.pohid-img {
+    float:left; 
+    width: 50%; 
+    margin-right: 4%; 
+    margin-bottom: 1%;
 }
 
