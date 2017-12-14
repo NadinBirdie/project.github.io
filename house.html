@@ -92,6 +92,7 @@
                 </div>
               <div id="panel-reserve">                
                 <div class="slider-form">   
+                    
                   <form action="" method='post' name='test' id='houseForm' onsubmit="formhotel()">
                     <label for="email">Ваш email</label>
                     <input type="text" id="email" value='' name="email" placeholder="Your email..">
@@ -145,7 +146,7 @@
                    
                    <script type="text/javascript">
 
-                        function formhotel (form){
+                        function formhotel(form){
                           fail = false;
                           var email = form.email.value;
                           var name = form.name.value;
@@ -153,8 +154,12 @@
                           var telephone = form.telephone.value;
                           var datecome = form.datecome.value;
                           var dateout = form.dateout.value;
-                          if ( email == '' || email == ' ')
-                              fail = 'Вкажіть, будь ласка, свій email';
+                          var hotel = form.hotel.value;
+
+                          var regEmail = /^[a-zA-Z][0-9a-zA-Z_]{2,21}@[a-zA-Z]{2,12}\.[a-zA-Z]{2,5}/i;
+                        //  var reg= /^\+380[0-9]{7}/i; 
+                          if (regEmail.test(email) == false )
+                              fail = 'Ви ввели неправильнo email';
                           else if (name == '' || name == ' ')
                               fail = 'Вкажіть, будь ласка, своє ім\'я ';
                           else if  (surrname == '' || surrname == ' ')
@@ -164,10 +169,11 @@
                            else if (datecome == '')
                               fail = 'Вкажіть, будь ласка, дату приїзду';
                            else if (dateout == '')
-                              fail = 'Вкажіть, будь ласка, дату відїзду'; 
+                              fail = 'Вкажіть, будь ласка, дату від\'їзду'; 
+                          else if (hotel ==  '')
+                              fail = 'take a hotel';    
                               if(fail)             
-                              alert(fail);
-                             
+                                 alert(fail);                             
                               else
                               window.location = 'http://google.com';
                         }
