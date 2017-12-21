@@ -138,15 +138,25 @@ div {
     padding: 50px;
     display: none;
 }
+#panel-reserve-house1-top, #flip-reserve-house1-top {
+    padding: 5px;
+    text-align: center;
+    background-color: #E9ECEF;
+    border: solid 1px #E9ECEF;
+}
 
-#panel-reserve2, #flip-reserve2 {
+#panel-reserve-house1-top {
+    padding: 50px;
+    display: none;
+}
+#panel-reserve-house1-bot, #flip-reserve-house1-bot {
     padding: 5px;
     text-align: center;
     background-color: white;
     
 }
 
-#panel-reserve2 {
+#panel-reserve-house1-bot {
     padding: 50px;
     display: none;
 }
@@ -488,7 +498,7 @@ h2 {
 
 } 
 
-.map {
+.map-house {
     width: 90%;
     height: 350px;
     margin: 1% 3% auto;
