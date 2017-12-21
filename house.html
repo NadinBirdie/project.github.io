@@ -26,7 +26,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
            <!-- Links -->
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ">
             <li class="nav-item">
                 <a class="nav-link" style='color:rgb(255, 255, 255)' href="#">Маршрути</a>
             </li>
@@ -88,10 +88,10 @@
       .........
       -->
               <div id="flip-reserve">
-                  <button class="button button2">Забронювати зараз</button>
+                  <button class="button button-reserve">Забронювати зараз</button>
                 </div>
               <div id="panel-reserve">                
-                <div class="slider-form">   
+                <div class="slider-form slider-form-house">   
                     
                   <form action="" method='post' name='test' id='houseForm' onsubmit="formhotel()">
                     <label for="email">Ваш email</label>
@@ -141,8 +141,8 @@
                       <option value="hotel">Котедж "Whitehouse"</option>
                       <option value="hotel">Готель "Добош"</option>
                     </select>
-                  
-                    <input type="submit" onclick="formhotel(document.getElementById('houseForm'))" name="submit" value="Забронювати">
+                  <button onclick="formhotel(document.getElementById('houseForm'))" class='button-reserve' name="submit">Забронювати</button>
+                   <!-- <input type="submit" onclick="formhotel(document.getElementById('houseForm'))" name="submit" value="Забронювати"> -->
                    
                    <script type="text/javascript">
 
@@ -199,15 +199,15 @@
               <div class="panel-body">   
                 <div class="cont-hover">                             
                     <img src="img/yablunucia.jpg" class="img-responsive" style="width:100%" alt="Image">
-                    <div class="overlay">
-                        <div class="text">Котедж «Гуцульський»
+                    <div class="overlay overlay-house ">
+                        <div class="text-overlay">Котедж «Гуцульський»
                           <p>8 місць</p> </div>
                     </div>
                 </div>
               </div>
               <div class="panel-footer"> 
-                <div class="pull-left"><p class="price"> 2200 грн/котедж</p></div>
-                <div class="pull-right">
+                <div class="pull-left left-price"><p class="price"> 2200 грн/котедж</p></div>
+                <div class="pull-right view-btn">
                  <a target="_blank" href="house-1.html" class="btn btn-success btn-sm" role="button">Переглянути</a>
                 </div>                           
               </div>
@@ -219,15 +219,15 @@
               <div class="panel-body">   
                 <div class="cont-hover">                             
                     <img src="img/yantary.jpg" class="img-responsive" style="width:100%" alt="Image">
-                    <div class="overlay">
-                        <div class="text">Готель та хостел "Янтари"
+                    <div class="overlay overlay-house ">
+                        <div class="text-overlay">Готель та хостел "Янтари"
                           <p style='text-align:center'></p> </div>
                     </div>
                 </div>
               </div>
               <div class="panel-footer"> 
-                <div class="pull-left"><p class="price"> 150 грн/особа</p></div>
-                <div class="pull-right">
+                <div class="pull-left left-price"><p class="price"> 150 грн/особа</p></div>
+                <div class="pull-right view-btn">
                  <a target="_blank" href="house-1.html" class="btn btn-success btn-sm" role="button">Переглянути</a>
                 </div>                           
               </div>
@@ -239,16 +239,16 @@
               <div class="panel-body">
                   <div class="cont-hover">
                       <img src="img/kruvopillia.jpg" class="img-responsive" style="width:100%" alt="Image">
-                      <div class="overlay">
-                          <div class="text">Гостинний дім "КАМ.ІН"
+                      <div class="overlay overlay-house ">
+                          <div class="text-overlay">Гостинний дім "КАМ.ІН"
                               <p >18 осіб 5 номерів</p>
                           </div>
                       </div>
                     </div>
                   </div>
               <div class="panel-footer"> 
-                  <div class="pull-left"><p class="price"> 600 грн/номер</p></div>
-                  <div class="pull-right">
+                  <div class="pull-left left-price"><p class="price"> 600 грн/номер</p></div>
+                  <div class="pull-right view-btn">
                    <a target="_blank" href="house-1.html" class="btn btn-success btn-sm" role="button">Переглянути</a>
                   </div>                           
                 </div>
@@ -270,16 +270,16 @@
               <div class="panel-body">
                   <div class="cont-hover">
                       <img src="img/kosiv.jpg" class="img-responsive" style="width:100%" alt="Image">
-                      <div class="overlay">
-                          <div class="text">Шале в горах
+                      <div class="overlay overlay-house">
+                          <div class="text-overlay">Шале в горах
                               <p >8-10 місць</p>
                           </div>
                       </div>
                     </div>                      
                   </div>
               <div class="panel-footer"> 
-                  <div class="pull-left"><p class="price"> 5000 грн/котедж</p></div>
-                  <div class="pull-right">
+                  <div class="pull-left left-price"><p class="price"> 5000 грн/котедж</p></div>
+                  <div class="pull-right view-btn">
                    <a target="_blank" href="house-1.html" class="btn btn-success btn-sm" role="button">Переглянути</a>
                   </div>                           
                 </div>
@@ -291,16 +291,16 @@
               <div class="panel-body">
                   <div class="cont-hover">
                 <img src="img/bukovel.jpg" class="img-responsive" style="width:100%" alt="Image">
-                <div class="overlay">
-                    <div class="text">Готель "БЕРЕГ"
+                <div class="overlay overlay-house ">
+                    <div class="text-overlay">Готель "БЕРЕГ"
                         <p>18 номерів</p>
                     </div>
                 </div>
                 </div>
               </div>
               <div class="panel-footer"> 
-                  <div class="pull-left"><p class="price"> 600 грн/номер</p></div>
-                  <div class="pull-right">
+                  <div class="pull-left left-price"><p class="price"> 600 грн/номер</p></div>
+                  <div class="pull-right view-btn">
                    <a target="_blank" href="https://booking.karpaty.ua/uk/houses/bereg?_ga=2.59774381.1678645475.1512132174-931358054.1511202931" class="btn btn-success btn-sm" role="button">Переглянути</a>
                   </div>                           
                 </div>
@@ -312,16 +312,16 @@
               <div class="panel-body">
                   <div class="cont-hover">
                 <img src="img/bukovel2.jpg" class="img-responsive" style="width:100%" alt="Image">
-                <div class="overlay">
-                    <div class="text"> Вілла "Лоїза"
+                <div class="overlay overlay-house ">
+                    <div class="text-overlay"> Вілла "Лоїза"
                         <p >31 номер 62 місця</p>
                     </div>
                 </div>
               </div>
               </div>
               <div class="panel-footer"> 
-                  <div class="pull-left"><p class="price"> 900 грн/номер</p></div>
-                  <div class="pull-right">
+                  <div class="pull-left left-price"><p class="price"> 900 грн/номер</p></div>
+                  <div class="pull-right view-btn">
                    <a target="_blank" href="https://booking.karpaty.ua/uk/houses/villa-loyiza?_ga=2.1522225.1678645475.1512132174-931358054.1511202931" class="btn btn-success btn-sm" role="button">Переглянути</a>
                   </div>                           
                 </div>
@@ -340,16 +340,16 @@
               <div class="panel-body">
                   <div class="cont-hover">
                       <img src="img/karpatski-zori.jpg" class="img-responsive" style="width:100%" alt="Image">
-                      <div class="overlay">
-                          <div class="text">Готель Карпатські Зорі
+                      <div class="overlay overlay-house ">
+                          <div class="text-overlay">Готель Карпатські Зорі
                               <p>74 номери</p>
                           </div>
                       </div>
                     </div>
                     </div>                
               <div class="panel-footer"> 
-                  <div class="pull-left"><p class="price"> 1400 грн/номер</p></div>
-                  <div class="pull-right">
+                  <div class="pull-left left-price"><p class="price"> 1400 грн/номер</p></div>
+                  <div class="pull-right view-btn">
                    <a target="_blank" href="house-1.html" class="btn btn-success btn-sm" role="button">Переглянути</a>
                   </div>                           
                 </div>
@@ -362,16 +362,16 @@
               <div class="panel-body">
                   <div class="cont-hover">
                       <img src="img/gasthaus.jpg" class="img-responsive" style="width:100%" alt="Image">
-                      <div class="overlay">
-                          <div class="text">Готель "GasThaus"
+                      <div class="overlay overlay-house ">
+                          <div class="text-overlay">Готель "GasThaus"
                               <p style='text-align:center'> 37 номерів</p>
                           </div>
                       </div>
                     </div>
                   </div>
               <div class="panel-footer"> 
-                  <div class="pull-left"><p class="price"> 850 грн/номер</p></div>
-                  <div class="pull-right">
+                  <div class="pull-left left-price"><p class="price"> 850 грн/номер</p></div>
+                  <div class="pull-right view-btn">
                    <a target="_blank" href="https://booking.karpaty.ua/uk/houses/gasthaus" class="btn btn-success btn-sm" role="button">Переглянути</a>
                   </div>                           
                 </div>
@@ -383,16 +383,16 @@
               <div class="panel-body">
                   <div class="cont-hover">
                       <img src="img/vershyna.jpg" class="img-responsive" style="width:100%" alt="Image">
-                      <div class="overlay">
-                          <div class="text">Котедж "Вершина"
+                      <div class="overlay overlay-house ">
+                          <div class="text-overlay">Котедж "Вершина"
                               <p> 8-14 осіб</p>
                           </div>
                       </div>
                     </div>
                     </div>                
               <div class="panel-footer"> 
-                  <div class="pull-left"><p class="price"> 1300 грн/номер</p></div>
-                  <div class="pull-right">
+                  <div class="pull-left left-price"><p class="price"> 1300 грн/номер</p></div>
+                  <div class="pull-right view-btn">
                    <a target="_blank" href="https://booking.karpaty.ua/uk/houses/vershyna" class="btn btn-success btn-sm" role="button">Переглянути</a>
                   </div>                           
                 </div>
@@ -412,16 +412,16 @@
               <div class="panel-body">
                   <div class="cont-hover">
                       <img src="img/12mounth.jpg" class="img-responsive" style="width:100%" alt="Image">
-                      <div class="overlay">
-                          <div class="text">Готель "12 місяців" 
+                      <div class="overlay overlay-house ">
+                          <div class="text-overlay">Готель "12 місяців" 
                               <p>та котедж "Травень"</p>
                           </div>
                       </div>
                     </div>                      
                   </div>
               <div class="panel-footer"> 
-                  <div class="pull-left"><p class="price"> 600 грн/номер</p></div>
-                  <div class="pull-right">
+                  <div class="pull-left left-price"><p class="price"> 600 грн/номер</p></div>
+                  <div class="pull-right view-btn">
                    <a target="_blank" href="https://booking.karpaty.ua/uk/houses/12-misyatsiv-may" class="btn btn-success btn-sm" role="button">Переглянути</a>
                   </div>                           
                 </div>
@@ -433,16 +433,16 @@
               <div class="panel-body">
                   <div class="cont-hover">
                 <img src="img/holzhouse.jpg" class="img-responsive" style="width:100%" alt="Image">
-                <div class="overlay">
-                    <div class="text">Котедж 'Holz House'
+                <div class="overlay overlay-house ">
+                    <div class="text-overlay">Котедж 'Holz House'
                         <p>8 місць</p>
                     </div>
                 </div>
                 </div>
               </div>
               <div class="panel-footer"> 
-                  <div class="pull-left"><p class="price"> 5500 грн/котедж</p></div>
-                  <div class="pull-right">
+                  <div class="pull-left left-price"><p class="price"> 5500 грн/котедж</p></div>
+                  <div class="pull-right view-btn">
                    <a target="_blank" href="https://booking.karpaty.ua/uk/houses/holzhaus" class="btn btn-success btn-sm" role="button">Переглянути</a>
                   </div>                           
                 </div>
@@ -454,16 +454,16 @@
               <div class="panel-body">
                   <div class="cont-hover">
                 <img src="img/oldhouse.jpg" class="img-responsive" style="width:100%" alt="Image">
-                <div class="overlay">
-                    <div class="text"> Садиба "Стара Хата"
+                <div class="overlay overlay-house ">
+                    <div class="text-overlay"> Садиба "Стара Хата"
                         <p>18 місць</p>
                     </div>
                 </div>
               </div>
               </div>
               <div class="panel-footer"> 
-                  <div class="pull-left"><p class="price"> 900 грн/номер</p></div>
-                  <div class="pull-right">
+                  <div class="pull-left left-price"><p class="price"> 900 грн/номер</p></div>
+                  <div class="pull-right view-btn">
                    <a target="_blank" href="https://booking.karpaty.ua/uk/houses/stara-hata" class="btn btn-success btn-sm" role="button">Переглянути</a>
                   </div>                           
                 </div>
@@ -481,15 +481,15 @@
                 <div class="panel-body">   
                   <div class="cont-hover">                             
                       <img src="img/rychay.jpg" class="img-responsive" style="width:100%" alt="Image">
-                      <div class="overlay">
-                          <div class="text">Котедж «Ручай»
+                      <div class="overlay overlay-house ">
+                          <div class="text-overlay">Котедж «Ручай»
                             <p>6-8 місць</p> </div>
                       </div>
                   </div>
                 </div>
                 <div class="panel-footer"> 
-                  <div class="pull-left"><p class="price"> 550 грн/номер</p></div>
-                  <div class="pull-right">
+                  <div class="pull-left left-price"><p class="price"> 550 грн/номер</p></div>
+                  <div class="pull-right view-btn">
                    <a target="_blank" href="https://booking.karpaty.ua/uk/houses/ruchaj" class="btn btn-success btn-sm" role="button">Переглянути</a>
                   </div>                           
                 </div>
@@ -502,16 +502,16 @@
                 <div class="panel-body">
                     <div class="cont-hover">
                         <img src="img/krepdeshun.jpg" class="img-responsive" style="width:100%" alt="Image">
-                        <div class="overlay">
-                            <div class="text">Готель "Шале КрепДеШин"
+                        <div class="overlay overlay-house ">
+                            <div class="text-overlay">Готель "Шале КрепДеШин"
                                 <p></p>
                             </div>
                         </div>
                       </div>
                     </div>
                 <div class="panel-footer"> 
-                    <div class="pull-left"><p class="price"> 550 грн/номер</p></div>
-                    <div class="pull-right">
+                    <div class="pull-left left-price"><p class="price"> 550 грн/номер</p></div>
+                    <div class="pull-right view-btn">
                      <a target="_blank" href="https://booking.karpaty.ua/uk/houses/shale-krepdeshyn" class="btn btn-success btn-sm" role="button">Переглянути</a>
                     </div>                           
                   </div>
@@ -523,16 +523,16 @@
                 <div class="panel-body">
                     <div class="cont-hover">
                         <img src="img/zarinok.jpg" class="img-responsive" style="width:100%" alt="Image">
-                        <div class="overlay">
-                            <div class="text">Садиба "Зарінок Карпат"
+                        <div class="overlay overlay-house ">
+                            <div class="text-overlay">Садиба "Зарінок Карпат"
                                 <p>6-7 осіб</p>
                             </div>
                         </div>
                       </div>
                       </div>                
                 <div class="panel-footer"> 
-                    <div class="pull-left"><p class="price"> 2500 грн/котедж</p></div>
-                    <div class="pull-right">
+                    <div class="pull-left left-price"><p class="price"> 2500 грн/котедж</p></div>
+                    <div class="pull-right view-btn">
                      <a target="_blank" href="https://booking.karpaty.ua/uk/houses/zarinok" class="btn btn-success btn-sm" role="button">Переглянути</a>
                     </div>                           
                   </div>
@@ -552,16 +552,16 @@
                 <div class="panel-body">
                     <div class="cont-hover">
                         <img src="img/silverocks.jpg" class="img-responsive" style="width:100%" alt="Image">
-                        <div class="overlay">
-                            <div class="text">Готель "Silverocks"
+                        <div class="overlay overlay-house ">
+                            <div class="text-overlay">Готель "Silverocks"
                                 <p>17 номерів</p>
                             </div>
                         </div>
                       </div>                      
                     </div>
                 <div class="panel-footer"> 
-                    <div class="pull-left"><p class="price"> 450 грн/номер</p></div>
-                    <div class="pull-right">
+                    <div class="pull-left left-price"><p class="price"> 450 грн/номер</p></div>
+                    <div class="pull-right view-btn">
                      <a target="_blank" href="https://booking.karpaty.ua/uk/houses/silveroks" class="btn btn-success btn-sm" role="button">Переглянути</a>
                     </div>                           
                   </div>
@@ -573,16 +573,16 @@
                 <div class="panel-body">
                     <div class="cont-hover">
                   <img src="img/whitehouse.jpg" class="img-responsive" style="width:100%" alt="Image">
-                  <div class="overlay">
-                      <div class="text">Котедж "Whitehouse"
+                  <div class="overlay overlay-house ">
+                      <div class="text-overlay">Котедж "Whitehouse"
                           <p>8 осіб</p>
                       </div>
                   </div>
                   </div>
                 </div>
                 <div class="panel-footer"> 
-                    <div class="pull-left"><p class="price"> 5000 грн/котедж</p></div>
-                    <div class="pull-right">
+                    <div class="pull-left left-price"><p class="price"> 5000 грн/котедж</p></div>
+                    <div class="pull-right view-btn">
                      <a target="_blank" href="https://booking.karpaty.ua/uk/houses/white-house" class="btn btn-success btn-sm" role="button">Переглянути</a>
                     </div>                           
                   </div>
@@ -594,16 +594,16 @@
                 <div class="panel-body">
                     <div class="cont-hover">
                   <img src="img/dobosh.jpg" class="img-responsive" style="width:100%" alt="Image">
-                  <div class="overlay">
-                      <div class="text"> Готель "Добош"
+                  <div class="overlay overlay-house ">
+                      <div class="text-overlay"> Готель "Добош"
                           <p></p>
                       </div>
                   </div>
                 </div>
                 </div>
                 <div class="panel-footer"> 
-                    <div class="pull-left"><p class="price"> 500 грн/номер</p></div>
-                    <div class="pull-right">
+                    <div class="pull-left left-price"><p class="price"> 500 грн/номер</p></div>
+                    <div class="pull-right view-btn">
                      <a target="_blank" href="https://booking.karpaty.ua/uk/houses/dobosh" class="btn btn-success btn-sm" role="button">Переглянути</a>
                     </div>                           
                   </div>
