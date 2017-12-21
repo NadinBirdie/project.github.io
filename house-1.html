@@ -74,8 +74,8 @@
               
             </div>
           <!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
+<div id="myModal" class="modal-house">
+  <span class="close-modal-house">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
@@ -94,7 +94,7 @@
               }
               
               // Get the <span> element that closes the modal
-              var span = document.getElementsByClassName("close")[0];
+              var span = document.getElementsByClassName("close-modal-house")[0];
               
               // When the user clicks on <span> (x), close the modal
               span.onclick = function() { 
@@ -132,7 +132,7 @@
       .........-->
       
               <div id="flip-reserve">
-                  <button class="button button2">Забронювати зараз</button>
+                  <button class="button button-reserve ">Забронювати зараз</button>
                 </div>
               <div id="panel-reserve">                
                 <div class="slider-form-house">   
@@ -185,7 +185,7 @@
                       <option value="hotel">Готель "Добош"</option>
                     </select>
                   
-                    <input type="submit" onclick="formhotel(document.getElementById('houseForm'))" name="submit" value="Забронювати">
+                    <input type="submit" class="button-reserve" onclick="formhotel(document.getElementById('houseForm'))" name="submit" value="Забронювати">
                    
                    <script type="text/javascript">
 
@@ -274,7 +274,7 @@
         </div>  
     
   <h2 style="text-align:center">Галерея</h2>   
-  <div class="container">
+  <div class="container ">
     <div class="mySlides-house">
       <div class="numbertext">1 / 12</div>
       <img src="img/h-modal-img/house3.jpg" style="width:100%">
@@ -338,40 +338,40 @@
     </div>
   
     <div class="row">
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house3.jpg" style="width:100%" onclick="currentSlide(1)" >
       </div>
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house4.jpg" style="width:100%" onclick="currentSlide(2)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house5.jpg" style="width:100%" onclick="currentSlide(3)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house6.jpg" style="width:100%" onclick="currentSlide(4)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house7.jpg" style="width:100%" onclick="currentSlide(5)">
       </div>    
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house8.jpg" style="width:100%" onclick="currentSlide(6)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house9.jpg" style="width:100%" onclick="currentSlide(7)">
         </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house10.jpg" style="width:100%" onclick="currentSlide(8)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house11.jpg" style="width:100%" onclick="currentSlide(9)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house12.jpg" style="width:100%" onclick="currentSlide(10)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house13.jpg" style="width:100%" onclick="currentSlide(11)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house14.jpg" style="width:100%" onclick="currentSlide(12)">
       </div>
     </div>
@@ -384,7 +384,7 @@
       .........-->
       
       <div id="flip-reserve2">
-        <button class="button button2">Забронювати зараз</button>
+        <button class="button button-reserve ">Забронювати зараз</button>
       </div>
     <div id="panel-reserve2">                
       <div class="slider-form-house">   
@@ -437,7 +437,7 @@
             <option value="hotel">Готель "Добош"</option>
           </select>
         
-          <input type="submit" onclick="formhotel(document.getElementById('houseForm'))" name="submit" value="Забронювати">
+          <input type="submit"  class="button-reserve" onclick="formhotel(document.getElementById('houseForm'))" name="submit" value="Забронювати">
          
          <script type="text/javascript">
 
