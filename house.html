@@ -146,37 +146,7 @@
                    
                    <script type="text/javascript">
 
-                        function formhotel(form){
-                          fail = false;
-                          var email = form.email.value;
-                          var name = form.name.value;
-                          var surrname = form.surrname.value;
-                          var telephone = form.telephone.value;
-                          var datecome = form.datecome.value;
-                          var dateout = form.dateout.value;
-                          var hotel = form.hotel.value;
-
-                          var regEmail = /^[a-zA-Z][0-9a-zA-Z_]{2,21}@[a-zA-Z]{2,12}\.[a-zA-Z]{2,5}/i;
-                        //  var reg= /^\+380[0-9]{7}/i; 
-                          if (regEmail.test(email) == false )
-                              fail = 'Ви ввели неправильнo email';
-                          else if (name == '' || name == ' ')
-                              fail = 'Вкажіть, будь ласка, своє ім\'я ';
-                          else if  (surrname == '' || surrname == ' ')
-                              fail = 'Вкажіть, будь ласка, своє прізвище '; 
-                          else if (telephone == '')  
-                              fail = 'Вкажіть, будь ласка, свій номер телефону '; 
-                           else if (datecome == '')
-                              fail = 'Вкажіть, будь ласка, дату приїзду';
-                           else if (dateout == '')
-                              fail = 'Вкажіть, будь ласка, дату від\'їзду'; 
-                          else if (hotel ==  '')
-                              fail = 'take a hotel';    
-                              if(fail)             
-                                 alert(fail);                             
-                              else
-                              window.location = 'http://google.com';
-                        }
+                        
                         </script> 
                   </form> 
                 </div>
@@ -680,21 +650,10 @@
               </div>
             </div>
             
-          </footer>
+          </footer>    
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script> 
-      $(document).ready(function(){
-          $("#flip-reserve").click(function(){
-              $("#panel-reserve").slideToggle("slow");
-          });
-      });
-   
-
-
-      </script>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="sashajs.js"></script>
 
 
 </body>
