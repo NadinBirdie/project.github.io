@@ -7,19 +7,16 @@ div {
 .navbar {
     background-color: rgb(51, 99, 121);    
 }
-.nav-height {
-    height: 35px;
-}
 
 .nav-item .nav-link:hover {
-    font-size: 17px;
+  /*  font-size: 17px; */
+  border-right: 1px solid rgb(255, 255, 255);
 }
 .nav-item:hover{
-    border-top: 1px solid rgb(255, 255, 255);
+   /* border-top: 1px solid rgb(255, 255, 255);  */
 }
 .navbar-nav{
     margin-left: 10px;
-    height: 35px;
 }  
 .carousel-inner img {
     width: 100%;
