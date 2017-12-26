@@ -74,34 +74,11 @@
               
             </div>
           <!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
+<div id="myModal" class="modal-house">
+  <span class="close-modal-house">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
-</div>
-            <script>
-              // Get the modal
-              var modal = document.getElementById('myModal');
-              
-              // Get the image and insert it inside the modal - use its "alt" text as a caption
-              var img = document.getElementById('myImg-house');
-              var modalImg = document.getElementById("img01");
-              var captionText = document.getElementById("caption");
-              img.onclick = function(){
-                  modal.style.display = "block";
-                  modalImg.src = this.src;
-                  captionText.innerHTML = this.alt;
-              }
-              
-              // Get the <span> element that closes the modal
-              var span = document.getElementsByClassName("close")[0];
-              
-              // When the user clicks on <span> (x), close the modal
-              span.onclick = function() { 
-                  modal.style.display = "none";
-              }
-              </script>
-              
+</div>          
 
 
       <div class="col-sm-4 marg-img">
@@ -131,93 +108,67 @@
       ...................
       .........-->
       
-              <div id="flip-reserve">
-                  <button class="button button2">Забронювати зараз</button>
+              <div id="flip-reserve-house1-top">
+                  <button class="button button-reserve ">Забронювати зараз</button>
                 </div>
-              <div id="panel-reserve">                
+              <div id="panel-reserve-house1-top">                
                 <div class="slider-form-house">   
-                  <form action="" method='post' name='test' id='houseForm' onsubmit="formhotel()">
-                    <label for="email">Ваш email</label>
-                    <input type="text" id="email" value='' name="email" placeholder="Your email..">
-      
-                    <label for="name">Ім'я</label>
-                    <input type="text" id="name" value='' name="name" placeholder="Your name..">
+                  <form action="" method='post' name='test' id='houseFormtop' onsubmit="formhoteltop()">
+                      <div class="row">
+                          <div class="col-sm-12 col-md-6">
+                              <label for="email">Ваш email</label>
+                              <input type="text" id="email" value='' name="email" placeholder="Your email..">
+    
+                              <label for="telephone">Номер мобільного</label>
+                              <input type="text" id="telephone" value='' name="telephone" placeholder="Your number..">     
+                              
+                              <p><label for="hotel">Назва закладу</label></p>                
+                              <select id="hotel" name="hotel">
+                                <option value="hotel">Котедж "Гуцульський"</option>
+                                <option value="hotel">Гостинний дім "КАМ.ІН"</option>
+                                <option value="hotel">Готель Карпатські Зорі</option>
+                                <option value="hotel">Шале в горах</option>
+                                <option value="hotel">Готель Берег</option>
+                                <option value="hotel">Вілла "Лоїза"</option>
+                                <option value="hotel">Готель та хостел "Янтари"</option>
+                                <option value="hotel">Готель "GasThaus"</option>
+                                <option value="hotel">Котедж "Вершина"</option>
+                                <option value="hotel">Готель "12 місяців" та котедж "Травень"</option>
+                                <option value="hotel">Котедж 'Holz House'</option>
+                                <option value="hotel">Садиба "Стара Хата"</option>
+                                <option value="hotel">Котедж «Ручай»</option>
+                                <option value="hotel">Готель "Шале КрепДеШин"</option>
+                                <option value="hotel">Садиба "Зарінок Карпат"</option>
+                                <option value="hotel">Готель "Silverocks"</option>
+                                <option value="hotel">Котедж "Whitehouse"</option>
+                                <option value="hotel">Готель "Добош"</option>
+                              </select>         
+                          </div>
+                          <div class="col-sm-12 col-md-6">
+                              <label for="name">Ім'я</label>
+                              <input type="text" id="name" value='' name="name" placeholder="Your name..">
+                          
+                              <label for="surrname">Прізвище</label>
+                              <input type="text" id="surrname" name="surrname" value='' placeholder="Your last name..">
+    <br><br>
+                              <label for="date"  class='pull-right'>Дата приїзду
+                                  <i class="fa fa-calendar"  aria-hidden="true" >
+                                      <input type="date" id='datecome' name="datecome" value='' >
+                                  </i>                        
+                              </label>   
+          
+                              <label for="date"  class='pull-right'> Дата від'їзду_ 
+                                  <i class="fa fa-calendar"  aria-hidden="true" >
+                                      <input type="date" id='dateout' name='dateout' value=''>
+                                  </i>      
+                               </label>               
+                          </div> 
+                        </div>   
+                        <br><br>              
+                        <input type="submit" class="button-reserve" onclick="formhoteltop(document.getElementById('houseFormtop'))" name="submit" value="Забронювати">
                 
-                    <label for="surrname">Прізвище</label>
-                    <input type="text" id="surrname" name="surrname" value='' placeholder="Your last name..">
-      
-                    <label for="telephone">Номер мобільного</label>
-                    <input type="text" id="telephone" value='' name="telephone" placeholder="Your number..">
-                   
-                    <label for="date"  style='float:left'>Дата приїзду
-                        <i class="fa fa-calendar"  aria-hidden="true" >
-                            <input type="date" id='datecome' name="datecome" value='' >
-                        </i>                        
-                    </label>                     
-                     
-                     <label for="date"  style='float:center'>Дата від'їзду
-                        <i class="fa fa-calendar"  aria-hidden="true" >
-                            <input type="date" id='dateout' name='dateout' value=''>
-                        </i>      
-                     </label>
-                  
-                    
-                   
-                <p><label for="hotel">Назва закладу</label></p>                
-                    <select id="hotel" name="hotel">
-                      <option value="hotel">Котедж "Гуцульський"</option>
-                      <option value="hotel">Гостинний дім "КАМ.ІН"</option>
-                      <option value="hotel">Готель Карпатські Зорі</option>
-                      <option value="hotel">Шале в горах</option>
-                      <option value="hotel">Готель Берег</option>
-                      <option value="hotel">Вілла "Лоїза"</option>
-                      <option value="hotel">Готель та хостел "Янтари"</option>
-                      <option value="hotel">Готель "GasThaus"</option>
-                      <option value="hotel">Котедж "Вершина"</option>
-                      <option value="hotel">Готель "12 місяців" та котедж "Травень"</option>
-                      <option value="hotel">Котедж 'Holz House'</option>
-                      <option value="hotel">Садиба "Стара Хата"</option>
-                      <option value="hotel">Котедж «Ручай»</option>
-                      <option value="hotel">Готель "Шале КрепДеШин"</option>
-                      <option value="hotel">Садиба "Зарінок Карпат"</option>
-                      <option value="hotel">Готель "Silverocks"</option>
-                      <option value="hotel">Котедж "Whitehouse"</option>
-                      <option value="hotel">Готель "Добош"</option>
-                    </select>
-                  
-                    <input type="submit" onclick="formhotel(document.getElementById('houseForm'))" name="submit" value="Забронювати">
-                   
-                   <script type="text/javascript">
-
-                        function formhotel (form){
-                          fail = false;
-                          var email = form.email.value;
-                          var name = form.name.value;
-                          var surrname = form.surrname.value;
-                          var telephone = form.telephone.value;
-                          var datecome = form.datecome.value;
-                          var dateout = form.dateout.value;
-                          if ( email == '' || email == ' ')
-                              fail = 'Вкажіть, будь ласка, свій email';
-                          else if (name == '' || name == ' ')
-                              fail = 'Вкажіть, будь ласка, своє ім\'я ';
-                          else if  (surrname == '' || surrname == ' ')
-                              fail = 'Вкажіть, будь ласка, своє прізвище '; 
-                          else if (telephone == '')  
-                              fail = 'Вкажіть, будь ласка, свій номер телефону '; 
-                           else if (datecome == '')
-                              fail = 'Вкажіть, будь ласка, дату приїзду';
-                           else if (dateout == '')
-                              fail = 'Вкажіть, будь ласка, дату відїзду'; 
-                              if(fail)             
-                              alert(fail);
-                             
-                              else
-                              window.location = 'http://google.com';
-                        }
-                        </script> 
                   </form> 
-                </div>
+                  </div>
               </div>
 
 <!-- end slider
@@ -274,7 +225,7 @@
         </div>  
     
   <h2 style="text-align:center">Галерея</h2>   
-  <div class="container">
+  <div class="container ">
     <div class="mySlides-house">
       <div class="numbertext">1 / 12</div>
       <img src="img/h-modal-img/house3.jpg" style="width:100%">
@@ -338,40 +289,40 @@
     </div>
   
     <div class="row">
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house3.jpg" style="width:100%" onclick="currentSlide(1)" >
       </div>
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house4.jpg" style="width:100%" onclick="currentSlide(2)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house5.jpg" style="width:100%" onclick="currentSlide(3)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house6.jpg" style="width:100%" onclick="currentSlide(4)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house7.jpg" style="width:100%" onclick="currentSlide(5)">
       </div>    
-      <div class="column">
+      <div class="column-gallery">
         <img class="demo-house cursor" src="img/h-modal-img/house8.jpg" style="width:100%" onclick="currentSlide(6)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house9.jpg" style="width:100%" onclick="currentSlide(7)">
         </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house10.jpg" style="width:100%" onclick="currentSlide(8)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house11.jpg" style="width:100%" onclick="currentSlide(9)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house12.jpg" style="width:100%" onclick="currentSlide(10)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house13.jpg" style="width:100%" onclick="currentSlide(11)">
       </div>
-      <div class="column">
+      <div class="column-gallery">
           <img class="demo-house cursor" src="img/h-modal-img/house14.jpg" style="width:100%" onclick="currentSlide(12)">
       </div>
     </div>
@@ -383,103 +334,70 @@
       ...................
       .........-->
       
-      <div id="flip-reserve2">
-        <button class="button button2">Забронювати зараз</button>
+      <div id="flip-reserve-house1-bot">
+        <button class="button button-reserve ">Забронювати зараз</button>
       </div>
-    <div id="panel-reserve2">                
+    <div id="panel-reserve-house1-bot">                
       <div class="slider-form-house">   
         <form action="" method='post' name='test' id='houseForm' onsubmit="formhotel()">
-          <label for="email">Ваш email</label>
-          <input type="text" id="email" value='' name="email" placeholder="Your email..">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <label for="email">Ваш email</label>
+                    <input type="text" id="email" value='' name="email" placeholder="Your email..">
 
-          <label for="name">Ім'я</label>
-          <input type="text" id="name" value='' name="name" placeholder="Your name..">
+                    <label for="telephone">Номер мобільного</label>
+                    <input type="text" id="telephone" value='' name="telephone" placeholder="Your number..">     
+                    
+                    <p><label for="hotel">Назва закладу</label></p>                
+                    <select id="hotel" name="hotel">
+                      <option value="hotel">Котедж "Гуцульський"</option>
+                      <option value="hotel">Гостинний дім "КАМ.ІН"</option>
+                      <option value="hotel">Готель Карпатські Зорі</option>
+                      <option value="hotel">Шале в горах</option>
+                      <option value="hotel">Готель Берег</option>
+                      <option value="hotel">Вілла "Лоїза"</option>
+                      <option value="hotel">Готель та хостел "Янтари"</option>
+                      <option value="hotel">Готель "GasThaus"</option>
+                      <option value="hotel">Котедж "Вершина"</option>
+                      <option value="hotel">Готель "12 місяців" та котедж "Травень"</option>
+                      <option value="hotel">Котедж 'Holz House'</option>
+                      <option value="hotel">Садиба "Стара Хата"</option>
+                      <option value="hotel">Котедж «Ручай»</option>
+                      <option value="hotel">Готель "Шале КрепДеШин"</option>
+                      <option value="hotel">Садиба "Зарінок Карпат"</option>
+                      <option value="hotel">Готель "Silverocks"</option>
+                      <option value="hotel">Котедж "Whitehouse"</option>
+                      <option value="hotel">Готель "Добош"</option>
+                    </select>         
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" value='' name="name" placeholder="Your name..">
+                
+                    <label for="surrname">Прізвище</label>
+                    <input type="text" id="surrname" name="surrname" value='' placeholder="Your last name..">
+<br><br>
+                    <label for="date"  class='pull-right'>Дата приїзду
+                        <i class="fa fa-calendar"  aria-hidden="true" >
+                            <input type="date" id='datecome' name="datecome" value='' >
+                        </i>                        
+                    </label>   
+
+                    <label for="date"  class='pull-right'> Дата від'їзду_ 
+                        <i class="fa fa-calendar"  aria-hidden="true" >
+                            <input type="date" id='dateout' name='dateout' value=''>
+                        </i>      
+                     </label>               
+                </div> 
+              </div>   
+              <br><br>              
+              <input type="submit"  class="button-reserve" onclick="formhotel(document.getElementById('houseForm'))" name="submit" value="Забронювати">
       
-          <label for="surrname">Прізвище</label>
-          <input type="text" id="surrname" name="surrname" value='' placeholder="Your last name..">
-
-          <label for="telephone">Номер мобільного</label>
-          <input type="text" id="telephone" value='' name="telephone" placeholder="Your number..">
-         
-          <label for="date"  style='float:left'>Дата приїзду
-              <i class="fa fa-calendar"  aria-hidden="true" >
-                  <input type="date" id='datecome' name="datecome" value='' >
-              </i>                        
-          </label>                     
-           
-           <label for="date"  style='float:center'>Дата від'їзду
-              <i class="fa fa-calendar"  aria-hidden="true" >
-                  <input type="date" id='dateout' name='dateout' value=''>
-              </i>      
-           </label>
-        
-          
-         
-      <p><label for="hotel">Назва закладу</label></p>                
-          <select id="hotel" name="hotel">
-            <option value="hotel">Котедж "Гуцульський"</option>
-            <option value="hotel">Гостинний дім "КАМ.ІН"</option>
-            <option value="hotel">Готель Карпатські Зорі</option>
-            <option value="hotel">Шале в горах</option>
-            <option value="hotel">Готель Берег</option>
-            <option value="hotel">Вілла "Лоїза"</option>
-            <option value="hotel">Готель та хостел "Янтари"</option>
-            <option value="hotel">Готель "GasThaus"</option>
-            <option value="hotel">Котедж "Вершина"</option>
-            <option value="hotel">Готель "12 місяців" та котедж "Травень"</option>
-            <option value="hotel">Котедж 'Holz House'</option>
-            <option value="hotel">Садиба "Стара Хата"</option>
-            <option value="hotel">Котедж «Ручай»</option>
-            <option value="hotel">Готель "Шале КрепДеШин"</option>
-            <option value="hotel">Садиба "Зарінок Карпат"</option>
-            <option value="hotel">Готель "Silverocks"</option>
-            <option value="hotel">Котедж "Whitehouse"</option>
-            <option value="hotel">Готель "Добош"</option>
-          </select>
-        
-          <input type="submit" onclick="formhotel(document.getElementById('houseForm'))" name="submit" value="Забронювати">
-         
-         <script type="text/javascript">
-
-              function formhotel (form){
-                fail = false;
-                var email = form.email.value;
-                var name = form.name.value;
-                var surrname = form.surrname.value;
-                var telephone = form.telephone.value;
-                var datecome = form.datecome.value;
-                var dateout = form.dateout.value;
-                if ( email == '' || email == ' ')
-                    fail = 'Вкажіть, будь ласка, свій email';
-                else if (name == '' || name == ' ')
-                    fail = 'Вкажіть, будь ласка, своє ім\'я ';
-                else if  (surrname == '' || surrname == ' ')
-                    fail = 'Вкажіть, будь ласка, своє прізвище '; 
-                else if (telephone == '')  
-                    fail = 'Вкажіть, будь ласка, свій номер телефону '; 
-                 else if (datecome == '')
-                    fail = 'Вкажіть, будь ласка, дату приїзду';
-                 else if (dateout == '')
-                    fail = 'Вкажіть, будь ласка, дату відїзду'; 
-                    if(fail)             
-                    alert(fail);
-                   
-                    else
-                    window.location = 'http://google.com';
-              }
-              </script> 
         </form> 
+        
       </div>
     </div>
-    <script> 
-      $(document).ready(function(){
-          $("#flip-reserve2").click(function(){
-              $("#panel-reserve2").slideToggle("slow");
-          });
-      });
-      $("date").datetimepicker();
-      
-    </script>
+    
 <!-- end slider
 ..............
 ..........
@@ -495,12 +413,12 @@
 </div>
 
 <br>
-<div id="map" style="width:100%;height:200px;background:white">My map will go here</div>
+<div id="map-house" style="width:100%;height:200px;background:white">My map will go here</div>
 
 
 <script>
     function myMap() {
-      var mapCanvas = document.getElementById("map");
+      var mapCanvas = document.getElementById("map-house");
       var mapOptions = {
         center: new google.maps.LatLng(48.3053853, 24.473891), zoom: 13
       };
@@ -580,68 +498,7 @@
         </div>        
       </footer>
       
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script> 
-      $(document).ready(function(){
-          $("#flip-reserve").click(function(){
-              $("#panel-reserve").slideToggle("slow");
-          });
-      });
-      $("date").datetimepicker();      
-</script>
-<script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
-    
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('myImg');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-        modal.style.display = "none";
-    }
-    </script>
-  <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides-house");
-        var dots = document.getElementsByClassName("demo-house");
-        var captionText = document.getElementById("caption-house");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-      }
-      </script>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="sashajs.js"></script>
 </body>
 </html>
