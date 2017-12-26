@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="bootstrap-4.0.0-beta.2-dist/css/bootstrap.css">
   <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-  <link href="css/countrySelect.min.css" rel='stylesheet' type="text/css">
   <link rel="stylesheet" href="css/animate.css">
   <link href="css/style.css" rel='stylesheet' type="text/css">
 <!-- scripty-->
@@ -167,13 +166,98 @@
       </a>
     </div>
 
+    <div class="row style-mk-card-row">
+      <div class="col-md-5">
+          <div class="card style-mk-card border-none">
+            <div class="card-body style-mk">
+                <h1 class="text-mk">Мандруй Карпатами</h1>
+                <p class="text-mk-p">Сплануй свою подорож: знаходь місця та події, що варто відвідати, 
+                  бронюй житло у Карпатах та наповнюй кожен день новими враженнями!</p>
+                  
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn" class="b-tur"><h4 class="card-title wow flash"
+              data-wow-duration="4s" data-wow-delay="2s" data-wow-iteration="2">Замовити тур</h4></button>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-7">
+          <div class="card style-mk-card border-none">
+            <div class="card-body style-mk">
+                <img class="img-mk" src="img/mk.jpg" alt="Card image cap">
+            </div>
+          </div>
+      </div>
+    </div>
+<!--marszruty-->
+    <div class="card">
+        <div class="card-header">
+            <h2 class="float-left">Маршрути</h2>
+            <h4 class="float-right">Більше <a href="#">100</a> напрямків та маршрутів</h4>
+            
+        </div>
+    <div class="card-deck">
+        <div class="card style-card-marshruty border-none">
+          <img class="card-img-top" src="img/marshruty/gora_homiak_mini.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Гора Хом'як (1 542 м)</h4>
+            <p class="card-text">Гора Хом’як — одна з типових локацій для нескладного одноденного маршруту.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><a class="#" href="">Читати більше про гору Хом'як
+              </a></small>
+          </div>
+        </div>
+        <div class="card style-card-marshruty border-none">
+          <img class="card-img-top" src="img/marshruty/ozero-maricheyka.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Озеро Марічейка (1 510 м)</h4>
+            <p class="card-text">Марічейка — прекрасне гірське озеро, звідусіль оточене густим смерековим лісом.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><a class="more" href="">Читати більше про озеро Марічейка</a></small>
+          </div>
+        </div>
+        <div class="card style-card-marshruty border-none">
+          <img class="card-img-top" src="img/marshruty/shpyzi.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Гора Шпиці (1 863 м)</h4>
+            <p class="card-text">Назва “Шпиці” добре описує настрій цієї гори. Природні кам’яні насипи подібні до велетенських веж.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><a class="more" href="">Читати більше про гору Шпиці</a></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- карта спливаюча-->
+
+  <div class="card">
+    <div class="card-header" role="tab" id="headingThree" ata-placement="top" title="натисніть тут, щоб побачити карту">
+      <h5 class="mb-0">
+        <a class="collapsed text-dark" data-toggle="collapse" style="text-decoration:none" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h2 style="text-align:center;">
+                <i class="fa fa-hand-o-right maptitle wow fadeInLeft" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="2" data-toggle="list" aria-hidden="true"></i>
+                Туристична карта
+                <i class="fa fa-caret-square-o-down maptitle wow pulse" data-wow-duration="1s" data-wow-delay="6s" data-wow-iteration="8" aria-hidden="true"></i>
+            </h2>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" >
+      <div class="card-body">
+        <iframe class="map" src="http://turkarta.com/#lat=48.82573&lng=24.76107&z=9&m=2" alt="map"></iframe>
+      </div>
+    </div>
+</div>
+
 
     <!-- корисна інформація  -->
-    <div class="row">
+    <div class="row margin-info">
       <div class="col-sm-9 corysna-infa">
         <div class="card">
           <div class="card-body">
-              <img class="card-img-top" src="img/zyma5.jpg" alt="Card image cap" style="margin: 1%;">
+              <img class="card-img-top" src="img/zyma5.jpg" alt="Card image cap">
               <div class="card-body">
                 <h4 class="card-title">Корисна інформація</h4>
                             <!-- List group -->
@@ -184,10 +268,9 @@
                       <a class="list-group-item list-group-item-action wow bounce" data-wow-duration="2s" data-wow-delay="15s" data-wow-iteration="1" data-toggle="list" href="#settings" role="tab">Як уберегтися від удару блискавки в горах</a>
                   </div>
                   <!-- Tab panes -->
-                  <div class="tab-content">
+                  <div class="tab-content list-margin">
                       <div class="tab-pane active" id="home" role="tabpanel">
-                          <p class="myscroll-info"><br>
-                            <br>
+                          <p class="myscroll-info">
                           <img class="pohid-img" src="img/pohid.jpg" alt="pohid">
                             До походу, навіть самому легкому потрібно готуватися, як психологічно , так і  фізично . Це значно полегшує подолання всього маршруту і зводить до мінімуму всякі неприємні моменти (перевтомою і ін.).
                             <br>Рівень складності маршруту<br>
@@ -436,132 +519,122 @@
         </div>
       </div>
 
-      <div class="col-sm-3 button-modaltur">
-        <div class="card" style="border: none;">
-            
-            <!-- Trigger/Open The Modal -->
-            <button id="myBtn"><h4 class="card-title wow flash"
-              data-wow-duration="4s" data-wow-delay="2s" data-wow-iteration="2">Замовити тур</h4></button>
+      <div class="col-sm-1 corysna-infa">
+        <div class="card border-none">
+            <!-- Trigger/Open The Modal top↕ -->
             
             <!-- The Modal -->
             <div id="myModal" class="modaltur">
             
               <!-- Modal content -->
-              <div class="modal-contenttur">
-                <div class="modal-headertur bg-dark">
+              <div class="modal-contenttur"  style="background-image:url(img/zy1.jpg);">
+                <div class="modal-headertur">
                   <span class="closetur" data-placement="top" title="натисніть тут, щоб закрити це вікно">&times;</span>
-                  <h2>Замовити тур</h2>
+                  <h2 class="text-center">Замовити тур</h2>
                 </div>
                 <div class="modal-bodytur">
                     <div class="card-group row">
-                        <div class="card col-8 modal-form-tur">
-                        
+                        <div class="card col-8 modal-form-tur style-modal-bg">
                           <div class="card-body margin-modal-tur">
-
                             <form>
-                              <div class="row">
-                                  <div class="form-group col-md-6">
+                                <div class="container">
+                                  <div class="form-group">
                                     <label for="inputName">Ім'я</label>
                                     <input type="text" class="form-control" id="inputName" placeholder="Ім'я">
                                   </div>
 
-                                  <div class="form-group col-md-6">
+                                  <div class="form-group">
                                     <label for="inputLastName">Прізвище</label>
                                     <input type="text" class="form-control" id="inputLastName" placeholder="Прізвище">
                                   </div>
-                              </div>
-                              <div class="row">
-                                  <div class="form-group col-md-6">
-                                      <label for="inputEmail">Email</label>
-                                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+
+                                  <div class="form-group">
+                                      <label for="inputEmail">Введіть ваш Email</label>
+                                      <input type="text" class="form-control" id="inputEmail" placeholder="karpaty-info@gmail.com">
                                   </div>
-                              </div>
-                              <div class="row">
-                                  <div class="form-group col-md-6">
-                                      <input type="text" id="phone" name="phone" placeholder="Введіть ваш номер телефону">
+
+                                  <div class="form-group">
+                                      <label for="phone">Ваш номер телефону</label>
+                                      <input type="text" id="phone" name="phone" placeholder="+38 (999) 999-9999">
+
                                       <script>$("#phone").mask("+38 (999) 999-9999");</script>
                                   </div>
-                              </div>
-                              <div class="row">
-                                  <div class="form-group col-md-6">
-                                      <label for="inputCity">Місто</label>
-                                      <input type="text" class="form-control" id="inputCity" placeholder="Ваше місто">
-                                  </div>
-                              </div>
-                                <div class="form-group">
-                                  <label for="inputAddress">Адрес</label>
-                                  <input type="text" class="form-control" id="inputAddress" placeholder="Адрес">
-                                </div>
 
-                                 <!--     <div class="row">
-                                        <div class="col-md-4">
-                                          <select value="FRA" data-role="country-selector" type="text" class="form-control"></select>
-                                        </div>
+                                  <div class="form-group">
+                                      <label for="country"> Карїна</label>
+                                      <select name="country" id="country"></select> <br>
+                                      <select name="city" id="city"></select> <br>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label for="inputAddress">Адрес</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="Адрес">
+                                  </div>
+
+                                  <div class="row" style="margin:1%;">
+                                        <label>Вибрати стать: </label>
+                                      <div class="form-group col-md-4"><input type="radio" name="gender" value="male" checked> Чоловіча</div>
+                                      <div class="form-group col-md-4"><input type="radio" name="gender" value="female"> Жіноча</div>
+                                  </div>
+                                  <div id="slidecontainer">
+                                        <input id="myRange" id="inputOld"  type="range" min="1" max="100" value="20" class="slider">
+                                        <p>Вік: <span id="demo"></span></p>
+                                  </div>
+
+                                  <script>
+                                      var slider = document.getElementById("myRange");
+                                      var output = document.getElementById("demo");
+                                      output.innerHTML = slider.value;
+                                      
+                                      slider.oninput = function() {
+                                        output.innerHTML = this.value;
+                                      }
+                                  </script>
+
+                                  <div class="form-group">
+                                      <label for="inputState">Вибрати маршрут</label>
+                                      <select id="inputState" class="form-control">
+                                        <option selected>Вибрати...</option>
+                                        <option>Піп-Іван Чорногірський</option>
+                                        <option>Озеро Марічейка</option>
+                                        <option>Гора Хом'як</option>
+                                        <option>Гора Кострич</option>
+                                        <option>Горганські гори</option>
+                                        <option>Гора Петрос</option>
+                                        <option>Мармароський масив</option>
+                                      </select>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                        <label for="inputDays">Кількість днів</label>
+                                        <input id="inputDays" type="number" name="quantity" min="1" max="20" class="form-control">
                                       </div>
-                                -->
 
-                              <div class="row" style="margin:2%;">
-                                    <label>Вибрати стать: </label>
-                                  <div class="form-group col-md-3"><input type="radio" name="gender" value="male" checked> Чоловіча</div>
-                                  <div class="form-group col-md-3"><input type="radio" name="gender" value="female"> Жіноча</div>
-                              </div>
-                                <div id="slidecontainer">
-                                      <input id="myRange" id="inputOld"  type="range" min="1" max="100" value="20" class="slider">
-                                      <p>Вік: <span id="demo"></span></p>
-                                </div>
-
-                                <script>
-                                    var slider = document.getElementById("myRange");
-                                    var output = document.getElementById("demo");
-                                    output.innerHTML = slider.value;
-                                    
-                                    slider.oninput = function() {
-                                      output.innerHTML = this.value;
-                                    }
-                                </script>
-
-                                <div class="form-group">
-                                    <label for="inputState">Вибрати маршрут</label>
-                                    <select id="inputState" class="form-control">
-                                      <option selected>Вибрати...</option>
-                                      <option>Піп-Іван Чорногірський</option>
-                                      <option>Озеро Марічейка</option>
-                                      <option>Гора Хом'як</option>
-                                      <option>Гора Кострич</option>
-                                      <option>Горганські гори</option>
-                                      <option>Гора Петрос</option>
-                                      <option>Мармароський масив</option>
-                                    </select>
-                                </div>
-                              <div class="row">
-                                  <div class="form-group col-md-3">
-                                    <label for="inputDays">Кількість днів</label>
-                                    <input id="inputDays" type="number" name="quantity" min="1" max="20" class="form-control">
-                                  </div>
-
-                                  <div class="form-group col-md-4">
-                                       <label for="inputNumber">Кількість чоловік</label>
-                                       <input id="inputNumber" type="number" name="quantity" min="1" max="10" class="form-control">
-                                  </div>
-                              </div>
-                              <div class="row">
-                                  <div class="form-group col-md-7">
-                                    <label for="date"> Вибрати дату <i class="fa fa-calendar"  aria-hidden="true"></i></label>
-                                    <input type="date" class="form-control">
-                                  </div>
-                              </div>
-                                <div class="form-group" >
-                                      <label for="exampleFormControlTextarea">Написати повідомлення:</label>
-                                      <textarea class="form-control" id="exampleFormControlTextarea" rows="3" placeholder="Напишіть тут все що вас цікавить і ми зв'яжемося з вами..."></textarea>
+                                    <div class=" col-md-6">
+                                        <label for="inputNumber">Кількість чоловік</label>
+                                        <input id="inputNumber" type="number" name="quantity" min="1" max="10" class="form-control">
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                  <div class="form-check">
-                                    <label class="form-check-label">
-                                      <input class="form-check-input" type="checkbox"> запам'ятати
-                                    </label>
                                   </div>
-                                <button type="submit" class="btn btn-primary">Надіслати</button>
+                                  <div class="form-group margin-modal-tur">
+                                        <label for="date"> Вибрати дату <i class="fa fa-calendar"  aria-hidden="true"></i></label>
+                                        <input type="date" class="form-control">
+                                      </div>
+                                  <div class="form-group" >
+                                        <label for="exampleFormControlTextarea">Написати повідомлення:</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea" rows="3" placeholder="Напишіть тут все що вас цікавить і ми зв'яжемося з вами..."></textarea>
+                                      </div>
+                                  </div>
+                                  <br>
+                                  <br>
+                                  <div class="form-group modal-submit">
+                                      <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="checkbox"> запам'ятати
+                                        </label>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Надіслати</button>
+                                  </div>
+                                </div>
                             </form>
                           </div>
                         </div>
@@ -570,8 +643,8 @@
               </div>
             </div>
 
-            <div class="card col-2 pogoda-style">
-                <div class="card  mb-3" style="border: none;">
+            <div class="card pogoda-style">
+                <div class="card  mb-3 border-none">
                     <div class="card-header border-primary"><h4 class="card-title">Погода</h4></div>
                     <div class="card-body text-primary" >
                       <!-- weather widget start -->
@@ -671,7 +744,7 @@
         
                     </div>
                   </div>
-                  <div class="card  mb-3 vidhuk">
+                  <div class="card vidhuk">
                       <div class="card-header border-primary">
                           <h4 class="card-title">Написати відгук</h4>
                       </div>
@@ -710,7 +783,6 @@
                       </div>
                     </div>
                   </div>
-            
             </div>
         </div>
       </div>
@@ -743,36 +815,17 @@
   </div>
 
 
-  <!-- карта спливаюча-->
-
-  <div class="card">
-      <div class="card-header" role="tab" id="headingThree" ata-placement="top" title="натисніть тут, щоб побачити карту">
-        <h5 class="mb-0">
-          <a class="collapsed text-dark" data-toggle="collapse" style="text-decoration:none" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <h2 style="text-align:center;">
-                  <i class="fa fa-hand-o-right maptitle wow fadeInLeft" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="2" data-toggle="list" aria-hidden="true"></i>
-                  Туристична карта
-                  <i class="fa fa-caret-square-o-down maptitle wow pulse" data-wow-duration="1s" data-wow-delay="6s" data-wow-iteration="8" aria-hidden="true"></i>
-              </h2>
-          </a>
-        </h5>
-      </div>
-      <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" >
-        <div class="card-body">
-          <iframe class="map" src="http://turkarta.com/#lat=48.82573&lng=24.76107&z=9&m=2" alt="map"></iframe>
-        </div>
-      </div>
-  </div>
+  
 
 
 <!-- наша команда-->
 
-  <div class="card bgimg-team style-team">
-      <div class="card-body teamwidth border-team bgfoto-team" style="background-image:url(img/team131.jpeg);">
-          <div class="card-header text-ligh" align="right"><h2 class="text-light">Наша команда</h2></div>
-            <h4 class="card-title text-muted" align="right">Люди які допоможуть у вирішенні ваших запитаннь</h4>
+  <div class="style-team" style="background-image:url(img/team131.jpeg);">
+      <div class="card-body teamwidth border-team bgfoto-team">
+          <div class="card-header text-dark padding-team-title" align="right"><h2 class="text-light">Наша команда</h2>
             <p class="card-text text-muted" align="right">інформація, контактні дані</p>
-        
+          </div>
+          
           <div class="card-deck">
               <div class="card style-team-card">
                 <div class="card-body">
@@ -833,26 +886,6 @@
                         </div>
                       </div>
                     </div>
-
-                    <div class="card style-team-card">
-                        <div class="card-body">
-                            <h3 class="font-weight-bold">Кудла Василь</h3>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                          <div class="card-body">
-                              тел. +38063 799 88 03
-                          </div>
-                            <form>
-                              <button type="submit" class="btn btn-primary team-button">Надіслати email</button>
-                            </form>
-                          <div class="card-body">  
-                              <a class="colorsocial" href="#" target="_blank"><i class="fa fa-facebook " aria-hidden="true"></i></a>
-                              <a class="colorsocial" href="#" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i></a>
-                              <a class="colorsocial" href="#" target="_blank"><i class="fa fa-telegram " aria-hidden="true"></i></a>
-                              <a class="colorsocial" href="#" target="_blank"><i class="fa fa-twitter " aria-hidden="true"></i></a>
-                              <a class="colorsocial" href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                          </div>
-                        </div>
-                    </div>
                 </div>
               </div>
           </div>
@@ -861,16 +894,15 @@
 
 
 
-<!-- футер -->
-<footer >
-  <div class="card" style="background-image:url(img/zyma111.jpg);">
+<!-- футер  style="background-image:url(img/zyma111.jpg);"-->
+<footer>
         <!-- різна інформація картками-->
     
-    <div class="card-group row borderfooter teamwidth">
+    <div class="card-group row borderfooter footer-width" style="background-image:url(img/zyma111.jpg);">
         <div class="card style-footer-bg">
           <h4 class="card-title text-secondary title-footer-card-logo"> 
             <a class="colorsocial" href='index.html'><img class="wow flip" data-wow-duration="5s"data-wow-delay="2s" data-wow-iteration="3" src='img/logo45px.png'></a>Karpaty-info</h4>
-          <div class="card-body" >
+          <div class="card-body maptitle">
             <p class="card-text"><a href="index.html" style="text-decoration: none;" class="text-white">Головна</a></p>
             <p class="card-text"><a href="index.html" style="text-decoration: none" class="text-light">Путівник</a> </p>
             <p class="card-text"><a href="index.html" style="text-decoration: none" class="text-light"> Календар подій</a></p>
@@ -880,7 +912,7 @@
 
         <div class="card style-footer-bg">
             <h4 class="card-title text-secondary cartfootertitle">Категорії</h4>
-          <div class="card-body">
+          <div class="card-body maptitle">
               <p class="card-text"><a href="index.html" style="text-decoration: none" class="text-light">Туристичні маршрути</a></p>
               <p class="card-text"><a href="index.html" style="text-decoration: none" class="text-light">Відпочинок</a> </p>
               <p class="card-text"><a href="index.html" style="text-decoration: none" class="text-light"> Здоров'я</a></p>
@@ -891,7 +923,7 @@
 
         <div class="card style-footer-bg">
             <h4 class="card-title text-secondary cartfootertitle">Напрямки</h4>
-          <div class="card-body">
+          <div class="card-body maptitle">
               <p class="card-text"><a href="index.html" style="text-decoration: none" class="text-light">Східні Бескиди</a></p>
               <p class="card-text"><a href="index.html" style="text-decoration: none" class="text-light">Драгобрат</a> </p>
               <p class="card-text"><a href="index.html" style="text-decoration: none" class="text-light">Зелена перлина Карпат</a></p>
@@ -912,24 +944,25 @@
               <a class="colorsocial" href="#" target="_blank"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a>
             </div>
         </div>
+    </div>
+        <div class="row borderfooter footer-width">
+            <div class="card-body col-md-3 text-center footer2-backgrond-card">
+                <p><i class="fa fa-copyright text-secondary" aria-hidden="true"> 2017<b> Karpaty-info</b></i>
+            </div>
+            <div class="card-body col-md-3 text-center footer2-backgrond-card">
+                тел. +380637998803
+            </div>
+            <div class="card-body col-md-4 text-center footer2-backgrond-card">
+                email: bilousiryna6@gmail.com
+            </div>
+            <div class="card-body col-md-2 footer2-backgrond-card text-center">
+                <a href="index.html" class="text-secondary text-center"><i class="fa fa-home fa-2x" aria-hidden="true"> Home</i></a>
+            </div>
+        </div>
       </div>
       <!-- socialmerezi -->
-      <div class="row borderfooter"  style="width: 90%; margin: 10px auto">
-          <div class="card-body col-md-3 text-center footer2-backgrond-card">
-              <p><i class="fa fa-copyright text-secondary" aria-hidden="true"> 2017<b> Karpaty-info</b></i>
-          </div>
-          <div class="card-body col-md-3 text-center footer2-backgrond-card">
-              тел. +380637998803
-          </div>
-          <div class="card-body col-md-4 text-center footer2-backgrond-card">
-              email: bilousiryna6@gmail.com
-          </div>
-          <div class="card-body col-md-2 footer2-backgrond-card text-center">
-              <a href="index.html" class="text-secondary text-center"><i class="fa fa-home fa-2x" aria-hidden="true"> Home</i></a>
-          </div>
-      </div>
+      
     </div>
-  </div>
 </footer>
 
 
@@ -982,6 +1015,69 @@ $("date").datetimepicker();
               modal.style.display = "none";
           }
       }
+      
+    </script>
+    <!--$('body').css('overflow', 'hidden')-->
+
+
+    <!--for coutry and sity-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+          // Countries
+          var country_arr = new Array("Виберіть країну","Україна","Польща","Білорусія","USA","UAE");
+  
+          $.each(country_arr, function (i, item) {
+              $('#country').append($('<option>', {
+                  value: i,
+                  text : item,
+              }, '</option>' ));
+          });
+  
+          // Cities
+          var s_a = new Array();
+          s_a[0]="Виберіть місто";
+          s_a[1]="Виберіть місто|Івано-Франківськ|Львів|Ужгород|Чернівці|Київ|Житомир|Тернопіль";
+          s_a[2]="Виберіть місто|ANDHRAPRADESH|KARNATAKA|TAMILNADU|DELHI|GOA|W-BENGAL|GUJARAT|MADHYAPRADESH|MAHARASHTRA|RAJASTHAN";
+          s_a[3]="Виберіть місто|AUCKLAND";
+          s_a[4]="Виберіть місто|NEWJERSEY|ILLINOIS";
+          s_a[5]="Виберіть місто|DUBAI";
+  
+          $('#country').change(function(){
+              var c = $(this).val();
+              var city_arr = s_a[c].split("|");
+              $('#city').empty();
+              if(c==0){
+                  $('#city').append($('<option>', {
+                      value: '0',
+                      text: 'Виберіть місто',
+                  }, '</option>'));
+              }else {
+                  $.each(city_arr, function (i, item_city) {
+                      $('#city').append($('<option>', {
+                          value: item_city,
+                          text: item_city,
+                      }, '</option>'));
+                  });
+              }
+          });
+  
+      });
+  </script>
+
+    <!--if open modal lockscroll-->
+    <script>
+      var currentScroll=0;
+          function lockscroll(){
+              $(window).scrollTop(currentScroll);
+      } 
+          $("#myModal").mouseenter(function(){
+              currentScroll=$(window).scrollTop();
+              $(window).bind('scroll',lockscroll);
+          })
+          .mouseleave(function(){
+              currentScroll=$(window).scrollTop();
+              $(window).unbind('scroll',lockscroll); 
+      });
     </script>
 
     <!--pogoda-->
