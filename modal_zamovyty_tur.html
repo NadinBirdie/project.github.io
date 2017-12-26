@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon"  href="img/logo1.png" />
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-beta.2-dist/css/bootstrap.css">
+    <link href="css/style.css" rel='stylesheet' type="text/css">
+    <link href="css/countrySelect.min.css" rel='stylesheet' type="text/css">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="bootstrap-4.0.0-beta.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                ymaps.ready(function(){
+                    var geolocation = ymaps.geolocation;
+                    $('#cou').html('Ваша страна: '+geolocation.country);
+                    $('#tow').html('Ваш город: '+geolocation.city);
+                    $('#reg').html('Ваш регион: '+geolocation.region);
+                });
+            });
+    </script>
+<style>body{font-size:40px;}</style>
+</head>
+<body>
+       
+    
+    <div id="cou">Ваша страна: ... определяется ...</div>
+    <div id="tow">Ваш город: ... определяется ...</div>
+    <div id="reg">Ваш регион: ... определяется ...</div>
+</body>
+</html>
