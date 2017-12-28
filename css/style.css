@@ -504,10 +504,10 @@ h2 {
 .mapofice {
     width: 100%;
 }
-   
-.colorsocial {
-    color: rgb(0, 0, 0);
-    margin: 3%;
+.maptur {
+    width: 100%;
+    height: 350px;
+    margin: 1% auto;
 }
 
 .myscroll-info {
@@ -545,23 +545,98 @@ h2 {
 }
 
 
-
 /*marshruty*/
 .style-card-marshruty {
     padding: 2%;
 }
 
-.team-button {
-    width:9rem; 
-    margin:1%; 
-    opacity: 0.8;
+.marshrut-style-span {
+    font-size: 1em; 
+    line-height: 1.5em;
 }
-   
-.border-team {
+.bg-homiak {
+    width:100%; 
+    height: 350px; 
+    margin-top: 4%;
+}
+/*  marshruty index*/
+.margin-card-marshruty {
+    width: 95%;
+    margin: 5% auto;
+}
+
+.margin-card-marshruty1 {
+    margin: 5%;
+}
+/*text pasport*/
+.rich_text blockquote {
+    font-size: 1.125em;
+    padding: 1.66667em;
+    border: 1px solid #00b1c6;
+    margin: 1.33333em 0em 0em 0em;
+}
+.blockquote {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+}
+
+/* img marshruty*/
+.hero-image {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.style-marshrut-card {
+    width: 70%;
+    margin: -5% 15% 5% 15%;
+}
+  
+.fotosize-gory {
+    width: 80%;
+    margin: 3% 10% 5% 10% ;
+}
+
+.text-margin-gory {
+  margin: 5% 5% 0 5%;
+}
+.text-margin-gory1 {
+    font-size: 1em; 
+    line-height: 1.5em;
+  }
+
+.text-gory-1 {
+  margin: 5% 5% 0 5%;
+}
+
+.koordynaty {
+  margin: 5% 5% 0 5%;
+}
+
+.blablacar-logo {
+    width: 20%;
+}
+
+.bt-blacar {
+    width: 15rem;
+    min-width: 10rem;
+    margin: 1%;
+    padding: 1%;
     border: 1px solid rgb(214, 218, 217);
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 0 0 1px rgb(58, 55, 55), 0 0 13px rgb(20, 20, 20);
 }
+
+.blacarpadding {
+    padding: 5% 1%;
+    border: none;
+}
+
 
 .margin-carusel {
     margin-top: 55px;
@@ -644,9 +719,11 @@ h2 {
 .border-none {
     border: none;
 }
+
 .margin-info {
     margin: 10px;
 }
+
 .pohid-img {
     float:left; 
     width: 50%; 
@@ -655,10 +732,11 @@ h2 {
 }
 
 .corysna-infa {
-    width: 100%;
+    width: 90%;
     min-width:20rem;
     margin: 2% auto;
 }
+
 .list-margin {
     margin: 3% 0 auto;
 }
@@ -677,6 +755,7 @@ h2 {
     width:100%;
     overflow:auto;
 }
+
 .borderbox-vidhuky {
     border-style: groove;
     padding: 3%;
@@ -718,7 +797,7 @@ h2 {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 60%;
+    width:80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -769,7 +848,7 @@ h2 {
 }
 
 .margin-modal-tur {
-    margin: 10% auto;
+    margin: 5% auto;
 }
 .modal-submit {
     margin: auto;
@@ -827,11 +906,13 @@ h2 {
     margin-top:56px; 
     border: none;
 }
+
 .style-team { 
     padding: 4%;
     width: 100%;
     margin: auto;
 }
+
 .padding-team-title {
     padding: 4% 5% 22% 5%;
 }
@@ -847,11 +928,28 @@ h2 {
     min-width: 10rem; 
     max-height: 30rem;
 }
+.team-button {
+    width:9rem; 
+    margin:1%; 
+    opacity: 0.8;
+}
+   
+.border-team {
+    border: 1px solid rgb(214, 218, 217);
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgb(58, 55, 55), 0 0 13px rgb(20, 20, 20);
+}
+
 /*footer*/
 .style-footer-bg {
-    background : rgba(20, 20, 20, 0.6);
+    background : rgba(20, 20, 20, 0.1);
     color: #fff
 }
+
+.style-footer-bg-card {
+    background: linear-gradient(to left, #04a6c3 0%,#175685 90%);
+}
+
 .borderfooter {
     border: 1px solid rgb(214, 218, 217);
     box-shadow: 0 0 0 1px rgb(58, 55, 55), 0 0 13px rgb(20, 20, 20);
@@ -864,11 +962,11 @@ h2 {
     margin: 10px auto;
 }
 
-
 .cartfootertitle {
    margin: auto; 
    margin-top: 5%;
-}  
+}
+
 .maptitle {
    text-align:center;
    margin-left:4%;
@@ -876,15 +974,38 @@ h2 {
 }
 
 .footer2-backgrond-card {
-   background : rgba(20, 20, 20, 0.9);
-   color: #fff;
-   padding: 1%;
+   background : rgba(20, 20, 20, 0.5);
+   background: linear-gradient(to left, #04a6c3 0%,#175685 90%);
 }
+
+.footer2-padding {
+    color: #fff;
+    padding: 10px;
+ }
+
+ .text-opacity {
+     opacity: 0.6;
+ }
+
+.colorsocial {
+    color: rgb(0, 0, 0);
+    margin: 3%;
+    opacity: 0.8;
+}
+
 .title-footer-card-logo {
     margin-left: 20%; 
     margin-top:5%
 }
+
 .footer-width {
     width: 100%;
     margin: 2% 0 auto;
 }
+
+
+
+  
+
+    
+  
