@@ -475,10 +475,10 @@ h2 {
 
 .videotext {
 
-    
+
     text-align: center;
-    margin: 100px 30px 20px 30px;
-    text-indent: 20px;
+    margin: 100px 20px 10px 30px;
+    background-color: rgb(233,236,239);
     font-size: 18px;
     font-weight: bold;
     font-family: serif;
@@ -488,12 +488,13 @@ h2 {
 }
 
 .videoimage{
- width: 200px;
- height: 200px;
- margin-top: 50%;
+ width: 150px;
+ height: 150px;
+ margin-top: 80%;
  
 
 } 
+
 
 .map-house {
     width: 90%;
