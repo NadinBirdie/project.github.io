@@ -509,6 +509,9 @@ h2 {
     height: 350px;
     margin: 1% auto;
 }
+.margin-maptur {
+    margin: 8%  0;
+}
 
 .myscroll-info {
     padding: 1%;
@@ -546,6 +549,60 @@ h2 {
 
 
 /*marshruty*/
+
+.container-m {
+    position: relative;
+    width:100%
+}
+
+.b-marshrut {
+    text-decoration: none;
+    width: 15rem;
+    min-width:5rem; 
+    margin: 10% auto;
+    padding: 10px;
+    background-color: rgb(59, 186, 0);
+    border: 1px solid rgb(214, 218, 217);
+    border-radius: 2px;
+}
+.text-info-m { 
+    font-size:15px;
+}
+
+.image-m {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-m {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container-m:hover .image-m {
+  opacity: 0.2;
+}
+
+.container-m:hover .middle-m {
+  opacity: 1;
+}
+
+.text-m {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-decoration: none;
+}
+
 .style-card-marshruty {
     padding: 2%;
 }
@@ -582,6 +639,7 @@ h2 {
     -webkit-margin-start: 40px;
     -webkit-margin-end: 40px;
 }
+
 
 /* img marshruty*/
 .hero-image {
@@ -635,6 +693,16 @@ h2 {
 .blacarpadding {
     padding: 5% 1%;
     border: none;
+}
+
+
+/* rozvahy*/
+
+.rozvahy-margin {
+    margin: 5% 10%;
+}
+.rozvahy-margin-r {
+    margin: 3% 10%;
 }
 
 
@@ -864,6 +932,7 @@ h2 {
     box-shadow: 0 0 0 1px rgb(58, 55, 55), 0 0 13px rgb(20, 20, 20);
 }
 
+
 #slidecontainer {
     width: 100%;
 }
@@ -914,7 +983,7 @@ h2 {
 }
 
 .padding-team-title {
-    padding: 4% 5% 22% 5%;
+    padding: 4% 5% 18% 5%;
 }
 
 .teamwidth {
